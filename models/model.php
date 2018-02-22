@@ -40,8 +40,8 @@ function addNewComment($id_billet, $auteur, $commentaire) {
     if (
         $pdo_statement &&
         $pdo_statement->bindParam(':id_billet', $id_billet) &&
-        $pdo_statement->bindParam(':description', $description) &&
-        $pdo_statement->bindParam(':userid', $userid) &&
+        $pdo_statement->bindParam(':auteur', $auteur) &&
+        $pdo_statement->bindParam(':commentaire', $commentaire) &&
         $pdo_statement->execute()
     ) {
         return $pdo_statement;
