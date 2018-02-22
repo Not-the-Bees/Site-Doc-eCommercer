@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer</OriginalElement>
+  <nodes>
+    <node x="0.0" y="474.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+    <node x="233.0" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
+    <node x="0.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
+    <node x="438.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
+    <node x="0.0" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+    <node x="219.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.8" x="306.0" y="298.5" />
+  <SelectedNodes>
+    <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
