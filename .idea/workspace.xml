@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd54e23-0a87-452c-85b6-9d91d4ef9d54" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/models/modelAnswer.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/controllers/login.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/controllers/logout.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/models/modelMember.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,14 +44,7 @@
         <item name="wecommercer@127.0.0.1" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wecommercer: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="answer_comment: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="wecommercer@127.0.0.1" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="wecommercer: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="question_comment: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -69,24 +64,69 @@
       <file leaf-file-name="modelComment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/modelComment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
-                <marker date="1519398034598" expanded="true" signature="161:263" ph="INSERT INTO question_comment... " />
-                <marker date="1519398034598" expanded="true" signature="720:816" ph="INSERT INTO answer_comment... " />
+                <marker date="1519398576137" expanded="true" signature="197:299" ph="INSERT INTO question_comment... " />
+                <marker date="1519398576137" expanded="true" signature="816:912" ph="INSERT INTO answer_comment... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modelAnswer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modelAnswer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/modelAnswer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
+            <state relative-caret-position="300">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding>
-                <marker date="1519398230341" expanded="true" signature="163:265" ph="INSERT INTO question_comment... " />
-                <marker date="1519398230341" expanded="true" signature="722:818" ph="INSERT INTO answer_comment... " />
+                <marker date="1519398576157" expanded="true" signature="164:256" ph="INSERT INTO question_comment... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modelQuestion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/modelQuestion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <marker date="1519398576165" expanded="true" signature="172:254" ph="INSERT INTO question... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modelMember.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/modelMember.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <folding>
+                <marker date="1519399687621" expanded="true" signature="125:185" ph="SELECT * FRO... user" />
+                <marker date="1519399687621" expanded="true" signature="512:632" ph="INSERT INTO user... " />
+                <marker date="1519399687621" expanded="true" signature="1202:1239" ph="DELETE FROM user... " />
               </folding>
             </state>
           </provider>
@@ -115,6 +155,10 @@
         <option value="$PROJECT_DIR$/models/commentModel" />
         <option value="$PROJECT_DIR$/models/modelComment.php" />
         <option value="$PROJECT_DIR$/models/modelAnswer.php" />
+        <option value="$PROJECT_DIR$/models/modelQuestion.php" />
+        <option value="$PROJECT_DIR$/models/modelMember.php" />
+        <option value="$PROJECT_DIR$/controllers/logout.php" />
+        <option value="$PROJECT_DIR$/controllers/login.php" />
       </list>
     </option>
   </component>
@@ -164,6 +208,11 @@
             <path>
               <item name="Site-Doc-eCommercer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Site-Doc-eCommercer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Site-Doc-eCommercer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Site-Doc-eCommercer" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Site-Doc-eCommercer" type="b2602c69:ProjectViewProjectNode" />
@@ -321,7 +370,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20403000" />
+    <option name="totallyTimeSpent" value="22842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="125" y="86" width="1874" height="1043" extended-state="6" />
@@ -330,14 +379,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18974918" sideWeight="0.38367128" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38713196" sideWeight="0.38367128" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298687" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18974918" sideWeight="0.6163287" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38713196" sideWeight="0.6163287" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23692636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20277481" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14354323" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -388,58 +437,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cedf8236-d526-40be-9529-8cd9f875c94b/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <marker date="1519297780810" expanded="true" signature="554:707" ph="SELECT id, t... billets" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer</OriginalElement>
-          <nodes>
-            <node x="0.0" y="474.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
-            <node x="233.0" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
-            <node x="0.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
-            <node x="438.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
-            <node x="0.0" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
-            <node x="219.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="440.0" y="293.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Columns</Category>
-            <Category>Key columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <marker date="1519297780810" expanded="true" signature="554:707" ph="SELECT id, t... billets" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -998,6 +995,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/modelQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <marker date="1519398576165" expanded="true" signature="172:254" ph="INSERT INTO question... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/modelComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <marker date="1519398576137" expanded="true" signature="197:299" ph="INSERT INTO question_comment... " />
+            <marker date="1519398576137" expanded="true" signature="816:912" ph="INSERT INTO answer_comment... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/modelAnswer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <marker date="1519398576157" expanded="true" signature="164:256" ph="INSERT INTO question_comment... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/modelMember.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <marker date="1519399687621" expanded="true" signature="125:185" ph="SELECT * FRO... user" />
+            <marker date="1519399687621" expanded="true" signature="512:632" ph="INSERT INTO user... " />
+            <marker date="1519399687621" expanded="true" signature="1202:1239" ph="DELETE FROM user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1006,25 +1054,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/modelComment.php">
+    <entry file="file://$PROJECT_DIR$/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
-          <folding>
-            <marker date="1519398034598" expanded="true" signature="161:263" ph="INSERT INTO question_comment... " />
-            <marker date="1519398034598" expanded="true" signature="720:816" ph="INSERT INTO answer_comment... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/modelAnswer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <marker date="1519398230341" expanded="true" signature="163:265" ph="INSERT INTO question_comment... " />
-            <marker date="1519398230341" expanded="true" signature="722:818" ph="INSERT INTO answer_comment... " />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
