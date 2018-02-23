@@ -1,4 +1,5 @@
 <?php
+
 //Initialisation du PDO et récupération de la config
 function initializePdo() {
 
@@ -31,19 +32,3 @@ function prepareStatement($sql) {
     return $pdo_statement;
 }
 
-//Ajout d'un nouveau commentaire
-function addNewComment($id_billet, $auteur, $commentaire) {
-
-    $pdo_statement = prepareStatement(
-        'INSERT INTO commentaires (id_billet, auteur, commentaire) VALUES (:id_billet, :auteur, :commentaire)');
-
-    if (
-        $pdo_statement &&
-        $pdo_statement->bindParam(':id_billet', $id_billet) &&
-        $pdo_statement->bindParam(':auteur', $auteur) &&
-        $pdo_statement->bindParam(':commentaire', $commentaire) &&
-        $pdo_statement->execute()
-    ) {
-        return $pdo_statement;
-    }
-}

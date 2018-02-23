@@ -3,22 +3,43 @@
   <ID>DATABASE</ID>
   <OriginalElement>cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer</OriginalElement>
   <nodes>
-    <node x="0.0" y="474.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
-    <node x="233.0" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
-    <node x="0.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
-    <node x="438.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
-    <node x="0.0" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
-    <node x="219.0" y="237.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
+    <node x="446.1521739130435" y="257.26086956521743">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+    <node x="194.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
+    <node x="0.0" y="461.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
+    <node x="0.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
+    <node x="89.99999999999999" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+    <node x="0.0" y="703.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
   </nodes>
   <notes />
-  <edges />
-  <settings layout="Hierarchic Group" zoom="0.8" x="306.0" y="298.5" />
+  <edges>
+    <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+      <point x="0.0" y="-96.0" />
+      <point x="281.0" y="194.0" />
+      <point x="231.0" y="194.0" />
+      <point x="47.0" y="84.5" />
+    </edge>
+    <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer">
+      <point x="0.0" y="-96.0" />
+      <point x="0.0" y="96.0" />
+    </edge>
+    <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+      <point x="0.0" y="-96.0" />
+      <point x="87.0" y="194.0" />
+      <point x="137.0" y="194.0" />
+      <point x="-47.0" y="84.5" />
+    </edge>
+    <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question">
+      <point x="0.0" y="-96.0" />
+      <point x="0.0" y="96.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7540983606557377" x="304.5" y="447.50000000000006" />
   <SelectedNodes>
-    <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+    <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
   </SelectedNodes>
   <Categories>
-    <Category>Key columns</Category>
     <Category>Columns</Category>
+    <Category>Key columns</Category>
   </Categories>
 </Diagram>
 
