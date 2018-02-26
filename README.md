@@ -24,7 +24,7 @@ Ces points de réputation permettront aux utilisateurs d'obtenir le grade de Sup
 -**LOT 5** : Système de Promote / Demote : **US10**.  
 
 ## Diagrammes 
-Le diagramme des classes (**ClassDiagram.mdj**) et le UseCaseDiagram ( ) sont consultables dans **/documentation**.
+Le diagramme des classes (**ClassDiagram.mdj**) et le UseCaseDiagram (**UseCaseDiagram.mdj**) sont consultables dans **/documentation**.
 
 ## Maquettes
 
