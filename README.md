@@ -31,4 +31,4 @@ Le diagramme des classes (**ClassDiagram.jpg**) et le UseCaseDiagram (**UseCaseD
 -**Page Documentation V1** (susceptible d'être repensée): https://wireframe.cc/ygnuWm   
 
 ## Slide présentation  
-https://slides.com/notthebees/deck-5/live#/
+http://slides.com/notthebees/deck-5
