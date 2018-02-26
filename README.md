@@ -24,9 +24,11 @@ Ces points de réputation permettront aux utilisateurs d'obtenir le grade de Sup
 -**LOT 5** : Système de Promote / Demote : **US10**.  
 
 ## Diagrammes 
-Le diagramme des classes (**ClassDiagram.mdj**) et le UseCaseDiagram ( ) sont consultables dans **/documentation**.
+Le diagramme des classes (**ClassDiagram.jpg**) et le UseCaseDiagram (**UseCaseDiagram.jpg**) sont consultables dans **/documentation**.
 
 ## Maquettes
-
 -**FrontPage V1** (susceptible d'être repensée): https://wireframe.cc/mcIEaG  
 -**Page Documentation V1** (susceptible d'être repensée): https://wireframe.cc/ygnuWm   
+
+## Slide présentation  
+https://slides.com/notthebees/deck-5/live#/
