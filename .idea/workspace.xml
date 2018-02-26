@@ -4,7 +4,7 @@
     <list default="true" id="0dd54e23-0a87-452c-85b6-9d91d4ef9d54" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/class_diagram:wecommercer.uml" afterPath="$PROJECT_DIR$/documentation/class_diagram:wecommercer.uml" />
+      <change beforePath="$PROJECT_DIR$/documentation/class_diagram:wecommercer.uml" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,6 +38,20 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wecommercer: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wecommercer@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wecommercer: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="answer: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="wecommercer@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wecommercer: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="user_role: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -46,7 +60,7 @@
       <file leaf-file-name="model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="0">
               <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
@@ -59,8 +73,8 @@
             <state relative-caret-position="225">
               <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
               <folding>
-                <marker date="1519398576137" expanded="true" signature="197:299" ph="INSERT INTO question_comment... " />
-                <marker date="1519398576137" expanded="true" signature="816:912" ph="INSERT INTO answer_comment... " />
+                <marker date="1519641561113" expanded="true" signature="197:299" ph="INSERT INTO question_comment... " />
+                <marker date="1519641561113" expanded="true" signature="816:912" ph="INSERT INTO answer_comment... " />
               </folding>
             </state>
           </provider>
@@ -72,7 +86,7 @@
             <state relative-caret-position="300">
               <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding>
-                <marker date="1519398576157" expanded="true" signature="164:256" ph="INSERT INTO question_comment... " />
+                <marker date="1519641561113" expanded="true" signature="164:256" ph="INSERT INTO question_comment... " />
               </folding>
             </state>
           </provider>
@@ -82,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/controllers/login.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="555">
-              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+              <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -97,55 +111,6 @@
                 <folding />
               </first_editor>
               <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class_diagram:wecommercer.uml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/documentation/class_diagram:wecommercer.uml">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>DATABASE</ID>
-              <OriginalElement>cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer</OriginalElement>
-              <nodes>
-                <node x="446.1521739130435" y="257.26086956521743">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
-                <node x="194.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
-                <node x="0.0" y="461.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
-                <node x="0.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
-                <node x="89.99999999999999" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
-                <node x="0.0" y="703.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer">
-                  <point x="0.0" y="-96.0" />
-                  <point x="0.0" y="96.0" />
-                </edge>
-                <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
-                  <point x="0.0" y="-96.0" />
-                  <point x="87.0" y="194.0" />
-                  <point x="137.0" y="194.0" />
-                  <point x="-47.0" y="84.5" />
-                </edge>
-                <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
-                  <point x="0.0" y="-96.0" />
-                  <point x="281.0" y="194.0" />
-                  <point x="231.0" y="194.0" />
-                  <point x="47.0" y="84.5" />
-                </edge>
-                <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question">
-                  <point x="0.0" y="-96.0" />
-                  <point x="0.0" y="96.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.7540983606557377" x="-123.98913043478257" y="303.45652173913044" />
-              <SelectedNodes>
-                <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
-              </SelectedNodes>
-              <Categories>
-                <Category>Columns</Category>
-                <Category>Key columns</Category>
-              </Categories>
             </state>
           </provider>
         </entry>
@@ -166,7 +131,7 @@
             <state relative-caret-position="300">
               <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding>
-                <marker date="1519398576165" expanded="true" signature="172:254" ph="INSERT INTO question... " />
+                <marker date="1519641561113" expanded="true" signature="172:254" ph="INSERT INTO question... " />
               </folding>
             </state>
           </provider>
@@ -178,9 +143,9 @@
             <state relative-caret-position="510">
               <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding>
-                <marker date="1519399687621" expanded="true" signature="125:185" ph="SELECT * FRO... user" />
-                <marker date="1519399687621" expanded="true" signature="512:632" ph="INSERT INTO user... " />
-                <marker date="1519399687621" expanded="true" signature="1202:1239" ph="DELETE FROM user... " />
+                <marker date="1519641561113" expanded="true" signature="125:185" ph="SELECT * FRO... user" />
+                <marker date="1519641561113" expanded="true" signature="512:632" ph="INSERT INTO user... " />
+                <marker date="1519641561113" expanded="true" signature="1202:1239" ph="DELETE FROM user... " />
               </folding>
             </state>
           </provider>
@@ -229,7 +194,7 @@
     </treeState>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="125" />
     <option name="y" value="86" />
     <option name="width" value="1380" />
@@ -426,15 +391,15 @@
       <workItem from="1519221517108" duration="215000" />
       <workItem from="1519289092015" duration="5028000" />
       <workItem from="1519297919823" duration="4759000" />
-      <workItem from="1519634023660" duration="6313000" />
+      <workItem from="1519634023660" duration="8478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30168000" />
+    <option name="totallyTimeSpent" value="32333000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="36" width="1874" height="1043" extended-state="7" />
+    <frame x="0" y="36" width="1874" height="1043" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -481,17 +446,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="165">
-            <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -958,7 +912,7 @@
         <state relative-caret-position="300">
           <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
-            <marker date="1519398576165" expanded="true" signature="172:254" ph="INSERT INTO question... " />
+            <marker date="1519641561113" expanded="true" signature="172:254" ph="INSERT INTO question... " />
           </folding>
         </state>
       </provider>
@@ -968,8 +922,8 @@
         <state relative-caret-position="225">
           <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
           <folding>
-            <marker date="1519398576137" expanded="true" signature="197:299" ph="INSERT INTO question_comment... " />
-            <marker date="1519398576137" expanded="true" signature="816:912" ph="INSERT INTO answer_comment... " />
+            <marker date="1519641561113" expanded="true" signature="197:299" ph="INSERT INTO question_comment... " />
+            <marker date="1519641561113" expanded="true" signature="816:912" ph="INSERT INTO answer_comment... " />
           </folding>
         </state>
       </provider>
@@ -979,7 +933,7 @@
         <state relative-caret-position="300">
           <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
-            <marker date="1519398576157" expanded="true" signature="164:256" ph="INSERT INTO question_comment... " />
+            <marker date="1519641561113" expanded="true" signature="164:256" ph="INSERT INTO question_comment... " />
           </folding>
         </state>
       </provider>
@@ -997,16 +951,16 @@
         <state relative-caret-position="510">
           <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding>
-            <marker date="1519399687621" expanded="true" signature="125:185" ph="SELECT * FRO... user" />
-            <marker date="1519399687621" expanded="true" signature="512:632" ph="INSERT INTO user... " />
-            <marker date="1519399687621" expanded="true" signature="1202:1239" ph="DELETE FROM user... " />
+            <marker date="1519641561113" expanded="true" signature="125:185" ph="SELECT * FRO... user" />
+            <marker date="1519641561113" expanded="true" signature="512:632" ph="INSERT INTO user... " />
+            <marker date="1519641561113" expanded="true" signature="1202:1239" ph="DELETE FROM user... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="0">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
@@ -1015,7 +969,7 @@
     <entry file="file://$PROJECT_DIR$/controllers/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
-          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1056,7 +1010,7 @@
               <point x="0.0" y="96.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.7540983606557377" x="-123.98913043478257" y="303.45652173913044" />
+          <settings layout="Hierarchic Group" zoom="0.7540983606557377" x="305.0" y="448.0" />
           <SelectedNodes>
             <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
           </SelectedNodes>
@@ -1064,6 +1018,14 @@
             <Category>Columns</Category>
             <Category>Key columns</Category>
           </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/documentation/ClassDiagram.mdj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
