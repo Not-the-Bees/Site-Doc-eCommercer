@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd54e23-0a87-452c-85b6-9d91d4ef9d54" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/cedf8236-d526-40be-9529-8cd9f875c94b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/cedf8236-d526-40be-9529-8cd9f875c94b.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/class_diagram:wecommercer.uml" afterPath="" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/class_diagram:wecommercer.uml" afterPath="$PROJECT_DIR$/documentation/class_diagram:wecommercer.uml" />
+>>>>>>> develop
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +48,155 @@
     <select />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modelComment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/modelComment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+              <folding>
+                <marker date="1519398576137" expanded="true" signature="197:299" ph="INSERT INTO question_comment... " />
+                <marker date="1519398576137" expanded="true" signature="816:912" ph="INSERT INTO answer_comment... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modelAnswer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/modelAnswer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <marker date="1519398576157" expanded="true" signature="164:256" ph="INSERT INTO question_comment... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="480">
+                <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class_diagram:wecommercer.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/documentation/class_diagram:wecommercer.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>DATABASE</ID>
+              <OriginalElement>cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer</OriginalElement>
+              <nodes>
+                <node x="446.1521739130435" y="257.26086956521743">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+                <node x="194.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
+                <node x="0.0" y="461.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
+                <node x="0.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
+                <node x="89.99999999999999" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+                <node x="0.0" y="703.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer">
+                  <point x="0.0" y="-96.0" />
+                  <point x="0.0" y="96.0" />
+                </edge>
+                <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+                  <point x="0.0" y="-96.0" />
+                  <point x="87.0" y="194.0" />
+                  <point x="137.0" y="194.0" />
+                  <point x="-47.0" y="84.5" />
+                </edge>
+                <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+                  <point x="0.0" y="-96.0" />
+                  <point x="281.0" y="194.0" />
+                  <point x="231.0" y="194.0" />
+                  <point x="47.0" y="84.5" />
+                </edge>
+                <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question">
+                  <point x="0.0" y="-96.0" />
+                  <point x="0.0" y="96.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.7540983606557377" x="-123.98913043478257" y="303.45652173913044" />
+              <SelectedNodes>
+                <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Columns</Category>
+                <Category>Key columns</Category>
+              </Categories>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modelQuestion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/modelQuestion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+              <folding>
+                <marker date="1519398576165" expanded="true" signature="172:254" ph="INSERT INTO question... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modelMember.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/modelMember.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <folding>
+                <marker date="1519399687621" expanded="true" signature="125:185" ph="SELECT * FRO... user" />
+                <marker date="1519399687621" expanded="true" signature="512:632" ph="INSERT INTO user... " />
+                <marker date="1519399687621" expanded="true" signature="1202:1239" ph="DELETE FROM user... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> develop
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,13 +209,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/commentaire.php" />
         <option value="$PROJECT_DIR$/public/resources/css/style.css" />
         <option value="$PROJECT_DIR$/public/commentaires.php" />
         <option value="$PROJECT_DIR$/models/config.php" />
         <option value="$PROJECT_DIR$/models/model.php" />
+        <option value="$PROJECT_DIR$/models/commentModel" />
+        <option value="$PROJECT_DIR$/models/modelComment.php" />
+        <option value="$PROJECT_DIR$/models/modelAnswer.php" />
+        <option value="$PROJECT_DIR$/models/modelQuestion.php" />
+        <option value="$PROJECT_DIR$/models/modelMember.php" />
+        <option value="$PROJECT_DIR$/controllers/logout.php" />
+        <option value="$PROJECT_DIR$/controllers/login.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -103,7 +264,10 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+>>>>>>> develop
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -111,6 +275,16 @@
             <path>
               <item name="Site-Doc-eCommercer" type="b2602c69:ProjectViewProjectNode" />
               <item name="Site-Doc-eCommercer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Site-Doc-eCommercer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Site-Doc-eCommercer" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Site-Doc-eCommercer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Site-Doc-eCommercer" type="462c0819:PsiDirectoryNode" />
+              <item name="documentation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Site-Doc-eCommercer" type="b2602c69:ProjectViewProjectNode" />
@@ -139,6 +313,10 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+>>>>>>> develop
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -154,6 +332,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/documentation" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/resources" />
     </key>
@@ -270,13 +449,19 @@
       <workItem from="1519216742335" duration="3397000" />
       <workItem from="1519221517108" duration="215000" />
       <workItem from="1519289092015" duration="5028000" />
+<<<<<<< HEAD
       <workItem from="1519297919823" duration="3749000" />
       <workItem from="1519374926179" duration="2763000" />
       <workItem from="1519381796379" duration="6103000" />
+=======
+      <workItem from="1519297919823" duration="4759000" />
+      <workItem from="1519634023660" duration="6313000" />
+>>>>>>> develop
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="26537000" />
   </component>
   <component name="ToolWindowManager">
@@ -294,21 +479,41 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23692636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12913553" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="30168000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="36" width="1874" height="1043" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18102509" sideWeight="0.37566704" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298687" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18102509" sideWeight="0.62433296" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15368196" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16168623" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298687" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+>>>>>>> develop
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +531,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -394,6 +600,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> develop
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -409,7 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -417,10 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1519297780810" expanded="true" signature="517:644" ph="SELECT id, t... billets" />
-            <marker date="1519297780810" expanded="true" signature="1176:1348" ph="SELECT auteu... commentaires" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -428,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -436,9 +638,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="47" />
-          <folding>
-            <marker date="1519298203609" expanded="true" signature="851:951" ph="INSERT INTO commentaires... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -475,11 +675,331 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../PHP/Todolist/jaroflife/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classDiagram.uml" />
+    <entry file="das://table:/37be4438/cedf8236-d526-40be-9529-8cd9f875c94b/wecommercer.answer">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/37be4438/cedf8236-d526-40be-9529-8cd9f875c94b/wecommercer.answer_comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MODULES/mdl-Site-Doc-eCommercer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-Site-Doc-eCommercer</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-Site-Doc-eCommercer</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="104.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/cedf8236-d526-40be-9529-8cd9f875c94b">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>cedf8236-d526-40be-9529-8cd9f875c94b</OriginalElement>
+          <nodes>
+            <node x="357.5" y="495.5">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+            <node x="194.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
+            <node x="0.0" y="461.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
+            <node x="0.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
+            <node x="187.0" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+            <node x="0.0" y="703.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
+            <node x="388.0" y="265.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user_role</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user_role">
+              <point x="0.0" y="-61.5" />
+              <point x="0.0" y="50.0" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+              <point x="0.0" y="-96.0" />
+              <point x="0.0" y="84.5" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer">
+              <point x="0.0" y="-96.0" />
+              <point x="0.0" y="96.0" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user_role" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+              <point x="0.0" y="-50.0" />
+              <point x="455.5" y="194.0" />
+              <point x="343.66666666666663" y="194.0" />
+              <point x="62.66666666666663" y="84.5" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+              <point x="0.0" y="-96.0" />
+              <point x="87.0" y="194.0" />
+              <point x="218.33333333333334" y="194.0" />
+              <point x="-62.66666666666666" y="84.5" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question">
+              <point x="0.0" y="-96.0" />
+              <point x="0.0" y="96.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="232.0" y="220.0" />
+          <SelectedNodes>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP//var/www/html/Site-Doc-eCommercer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes>
+            <node x="0.0" y="75.0">$PROJECT_DIR$/public</node>
+            <node x="0.0" y="0.0">$PROJECT_DIR$/models</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-138.0" y="-67.0" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/public</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/commentaires.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer</OriginalElement>
+          <nodes>
+            <node x="194.0" y="495.5">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+            <node x="379.5" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
+            <node x="0.0" y="461.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
+            <node x="0.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
+            <node x="198.0" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+            <node x="0.0" y="703.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
+            <node x="224.5" y="265.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user_role</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user_role">
+              <point x="0.0" y="-61.5" />
+              <point x="0.0" y="50.0" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+              <point x="0.0" y="-96.0" />
+              <point x="466.5" y="194.0" />
+              <point x="354.66666666666663" y="194.0" />
+              <point x="62.66666666666663" y="84.5" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer">
+              <point x="0.0" y="-96.0" />
+              <point x="0.0" y="96.0" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user_role" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+              <point x="0.0" y="-50.0" />
+              <point x="0.0" y="84.5" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+              <point x="0.0" y="-96.0" />
+              <point x="87.0" y="194.0" />
+              <point x="229.33333333333334" y="194.0" />
+              <point x="-62.66666666666666" y="84.5" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question">
+              <point x="0.0" y="-96.0" />
+              <point x="0.0" y="96.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7857923497267759" x="55.0" y="295.0" />
+          <SelectedNodes>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user_role</node>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cedf8236-d526-40be-9529-8cd9f875c94b/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weCommercer_class_diagram.uml" />
+    <entry file="uml://PHP//var/www/html/Site-Doc-eCommercer/public/resources">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$/public/resources</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="25.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="165">
             <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/commentaires.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/resources/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="47" lean-forward="false" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -490,7 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -505,10 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1519297780810" expanded="true" signature="517:644" ph="SELECT id, t... billets" />
-            <marker date="1519297780810" expanded="true" signature="1176:1348" ph="SELECT auteu... commentaires" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -516,17 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-          <folding>
-            <marker date="1519298203609" expanded="true" signature="851:951" ph="INSERT INTO commentaires... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -539,11 +1043,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
           <folding>
             <marker date="1519297780810" expanded="true" signature="554:707" ph="SELECT id, t... billets" />
           </folding>
+=======
+        <state relative-caret-position="270">
+          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+>>>>>>> develop
         </state>
       </provider>
     </entry>
@@ -562,6 +1078,7 @@
           </nodes>
           <notes />
           <edges />
+<<<<<<< HEAD
           <settings layout="Hierarchic Group" zoom="1.0" x="440.0" y="293.0" />
           <SelectedNodes />
           <Categories>
@@ -751,13 +1268,19 @@
           <SelectedNodes>
             <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
           </SelectedNodes>
+=======
+          <settings layout="Hierarchic Group" zoom="1.0" x="297.0" y="303.0" />
+          <SelectedNodes />
+>>>>>>> develop
           <Categories>
-            <Category>Key columns</Category>
             <Category>Columns</Category>
+            <Category>Key columns</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="uml://PHP//var/www/html/Site-Doc-eCommercer">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -793,30 +1316,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+=======
+    <entry file="file://$PROJECT_DIR$/models/commentModel.php" />
+    <entry file="file://$PROJECT_DIR$/models/modelQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
           <folding>
-            <marker date="1519297780810" expanded="true" signature="554:707" ph="SELECT id, t... billets" />
+            <marker date="1519398576165" expanded="true" signature="172:254" ph="INSERT INTO question... " />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/modelComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+>>>>>>> develop
+          <folding>
+            <marker date="1519398576137" expanded="true" signature="197:299" ph="INSERT INTO question_comment... " />
+            <marker date="1519398576137" expanded="true" signature="816:912" ph="INSERT INTO answer_comment... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/models/model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
           <folding>
             <marker date="1519298203609" expanded="true" signature="851:951" ph="INSERT INTO commentaires... " />
+=======
+    <entry file="file://$PROJECT_DIR$/models/modelAnswer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <marker date="1519398576157" expanded="true" signature="164:256" ph="INSERT INTO question_comment... " />
+>>>>>>> develop
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/models/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/controllers/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+>>>>>>> develop
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/commentaires.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -824,24 +1382,54 @@
           <folding>
             <marker date="1519297780810" expanded="true" signature="517:644" ph="SELECT id, t... billets" />
             <marker date="1519297780810" expanded="true" signature="1176:1348" ph="SELECT auteu... commentaires" />
+=======
+    <entry file="file://$PROJECT_DIR$/models/modelMember.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <marker date="1519399687621" expanded="true" signature="125:185" ph="SELECT * FRO... user" />
+            <marker date="1519399687621" expanded="true" signature="512:632" ph="INSERT INTO user... " />
+            <marker date="1519399687621" expanded="true" signature="1202:1239" ph="DELETE FROM user... " />
+>>>>>>> develop
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/resources/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
           <caret line="51" column="1" lean-forward="false" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/models/model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+>>>>>>> develop
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="uml://DATABASE/cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer">
+=======
+    <entry file="file://$PROJECT_DIR$/documentation/class_diagram:wecommercer.uml">
+>>>>>>> develop
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
           <ID>DATABASE</ID>
           <OriginalElement>cedf8236-d526-40be-9529-8cd9f875c94b.SCHEMA:wecommercer</OriginalElement>
           <nodes>
+<<<<<<< HEAD
             <node x="194.0" y="495.5">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
             <node x="379.5" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
             <node x="0.0" y="461.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
@@ -862,10 +1450,22 @@
               <point x="354.66666666666663" y="194.0" />
               <point x="62.66666666666663" y="84.5" />
             </edge>
+=======
+            <node x="446.1521739130435" y="257.26086956521743">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+            <node x="194.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment</node>
+            <node x="0.0" y="461.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer</node>
+            <node x="0.0" y="219.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question</node>
+            <node x="89.99999999999999" y="0.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user</node>
+            <node x="0.0" y="703.0">cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment</node>
+          </nodes>
+          <notes />
+          <edges>
+>>>>>>> develop
             <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer">
               <point x="0.0" y="-96.0" />
               <point x="0.0" y="96.0" />
             </edge>
+<<<<<<< HEAD
             <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user_role" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
               <point x="0.0" y="-50.0" />
               <point x="0.0" y="84.5" />
@@ -875,12 +1475,26 @@
               <point x="87.0" y="194.0" />
               <point x="229.33333333333334" y="194.0" />
               <point x="-62.66666666666666" y="84.5" />
+=======
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+              <point x="0.0" y="-96.0" />
+              <point x="87.0" y="194.0" />
+              <point x="137.0" y="194.0" />
+              <point x="-47.0" y="84.5" />
+            </edge>
+            <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question_comment" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.user">
+              <point x="0.0" y="-96.0" />
+              <point x="281.0" y="194.0" />
+              <point x="231.0" y="194.0" />
+              <point x="47.0" y="84.5" />
+>>>>>>> develop
             </edge>
             <edge source="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.answer" target="cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.question">
               <point x="0.0" y="-96.0" />
               <point x="0.0" y="96.0" />
             </edge>
           </edges>
+<<<<<<< HEAD
           <settings layout="Hierarchic Group" zoom="0.7857923497267759" x="54.93115438108475" y="295.4242002781641" />
           <SelectedNodes>
             <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
@@ -894,10 +1508,20 @@
           <Categories>
             <Category>Key columns</Category>
             <Category>Columns</Category>
+=======
+          <settings layout="Hierarchic Group" zoom="0.7540983606557377" x="-123.98913043478257" y="303.45652173913044" />
+          <SelectedNodes>
+            <node>cedf8236-d526-40be-9529-8cd9f875c94b.TABLE:wecommercer.role</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+>>>>>>> develop
           </Categories>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/cedf8236-d526-40be-9529-8cd9f875c94b/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -934,6 +1558,16 @@
           <SelectedNodes />
           <Categories />
           <VISIBILITY>private</VISIBILITY>
+=======
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="480">
+            <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+>>>>>>> develop
         </state>
       </provider>
     </entry>
