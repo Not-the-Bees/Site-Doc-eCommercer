@@ -31,6 +31,7 @@
                 <input type="submit" name="connect" value="Connexion">
             </form>
         </div>
+        <!-- End Login Form -->
 
         <!-- Register Form -->
         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -56,6 +57,7 @@
                 <input type="mail" name="email"><br />
                 <input type="submit" name="register" value="Register">
             </form>
+        </div>
     </section>
 </section>
 
