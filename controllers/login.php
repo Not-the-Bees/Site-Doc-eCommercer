@@ -24,8 +24,7 @@ if (isset($_POST['connect'])) {
             header ('location: browse.php');
 
         } else {
-            echo '<body onLoad="alert(\'Membre non reconnu...\')">';
-            header ('location: index.php');
+            $error = "Membre non reconnu - Veuillez entrer un Login ou un Mot de Passe valide";
         }
 
     } else {
@@ -48,10 +47,10 @@ if (isset($_POST['register'])) {
             $newUser = Member::create($login_register, $password_register, $email_register, $username_register);
 
             if ($newUser) {
-                header('location: views/valide.php');
+                header('location: /TalkAboutStuff/views/valide.php');
             }
         } else {
-            header('location: views/index.php');
+            header('location: /TalkAboutStuff/views/index.php');
         }
     } else {
         echo "Veuillez entrer un login/password/email valide";

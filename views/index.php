@@ -30,6 +30,7 @@
                 <input type="password" name="password"><br />
                 <input type="submit" name="connect" value="Connexion">
             </form>
+            <p class="error"><?php if (isset($error)) { echo $error; } ?></p>
         </div>
         <!-- End Login Form -->
 
@@ -58,6 +59,8 @@
                 <input type="submit" name="register" value="Register">
             </form>
         </div>
+        <!-- End Register Form -->
+
     </section>
 </section>
 
