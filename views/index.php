@@ -2,11 +2,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="public/reqsources/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="public/reqsources/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="public/reqsources/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" type="text/css" href="public/reqsources/css/style.css">
-    <title>Register / Login</title>
+    <link rel="stylesheet" type="text/css" href="../public/resources/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/resources/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/resources/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/resources/css/style.css">
+    <title>TAS : Register / Login</title>
 </head>
 
 <!-- Banner -->
@@ -17,10 +17,11 @@
 
 <section class="container-fluid">
     <section class="row">
+
         <!-- Login Form -->
         <div class="col-sm-12 col-md-6 col-lg-6">
             <h2 class="title">Authentification</h2>
-            <form action="login.php" method="post">
+            <form action="../controllers/login.php" method="post">
                 <label>Votre Login :</label>
                 <input type="text" name="login">
                 <br />
@@ -34,7 +35,7 @@
         <!-- Register Form -->
         <div class="col-sm-12 col-md-6 col-lg-6">
             <h2 class="title">Nouvel utilisateur, c'est par ici :</h2>
-            <form action="login.php" method="post">
+            <form action="../controllers/login.php" method="post">
                 <label>Votre nom d'utilisateur :</label>
                 <input type="text" name="username">
                 <br />
@@ -43,23 +44,23 @@
                 <input type="text" name="login">
                 <br />
                 <br />
-                <label>Mot de passe :</label>
-                <input type="password" name="password"><br />
+                <label>Votre mot de passe :</label>
+                <input type="password" name="pwd"><br />
                 <br />
                 <br />
-                <label>Confirmation du mot de passe :</label>
-                <input type="password" name="password"><br />
+                <label>Confirmation de votre mot de passe :</label>
+                <input type="password" name="confirm_pwd"><br />
                 <br />
                 <br />
-                <label>Adresse mail :</label>
+                <label>Votre Adresse mail :</label>
                 <input type="mail" name="email"><br />
                 <input type="submit" name="register" value="Register">
             </form>
     </section>
 </section>
 
-<script src="public/resources/js/bootstrap.bundle.min.js"></script>
-<script src="public/resources/js/bootstrap.min.js"></script>
+<script src="../public/resources/js/bootstrap.bundle.min.js"></script>
+<script src="../public/resources/js/bootstrap.min.js"></script>
 
 </body>
 </html>

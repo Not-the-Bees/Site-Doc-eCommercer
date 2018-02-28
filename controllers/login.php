@@ -1,7 +1,7 @@
 <?php
 
-require __DIR__.'/models/model.php'
-require __DIR__.'/models/modelMember.php';
+require '../models/modelDatabase.php';
+require '../models/modelMember.php';
 
 
 // Login
@@ -10,14 +10,14 @@ if (isset($_POST['connect'])) {
     if (isset($_POST['login'], $_POST['password'])) {
         $login_entered = htmlspecialchars($_POST['login']);
         $password_entered = htmlspecialchars($_POST['password']);
-        $user = connectMember($login_entered, $password_entered);
+        $user = Member::connect($login_entered, $password_entered);
 
 
         if ($user) {
 
             session_start ();
 
-            $_SESSION['userid'] = $user['userid'];
+            $_SESSION['id'] = $user['id'];
             $_SESSION['login'] = $user['login'];
             $_SESSION['pwd'] = $user['password'];
 
@@ -25,7 +25,7 @@ if (isset($_POST['connect'])) {
 
         } else {
             echo '<body onLoad="alert(\'Membre non reconnu...\')">';
-            header ('location: index.html');
+            header ('location: index.php');
         }
 
     } else {
@@ -37,22 +37,25 @@ if (isset($_POST['connect'])) {
 // Register
 if (isset($_POST['register'])) {
 
-    if (isset($_POST['login'], $_POST['pwd'], $_POST['email'], $_POST['confirm_pwd'])) {
+    if (isset($_POST['login'], $_POST['username'],$_POST['pwd'], $_POST['email'], $_POST['confirm_pwd'])) {
         $login_register = htmlspecialchars($_POST['login']);
         $password_register = htmlspecialchars($_POST['pwd']);
         $email_register = htmlspecialchars($_POST['email']);
         $password_confirmation = htmlspecialchars($_POST['confirm_pwd']);
+        $username_register = htmlspecialchars($POST['username']);
 
         if ($password_register === $password_confirmation) {
-            $newUser = createNewMember($login_register, $password_register, $email_register);
+            $newUser = Member::create($login_register, $password_register, $email_register, $username_register);
 
             if ($newUser) {
-                header('location: index.html');
+                header('location: views/valide.php');
             }
         } else {
-            header('location: index.html');
+            header('location: views/index.php');
         }
     } else {
         echo "Veuillez entrer un login/password/email valide";
     }
 }
+
+require '../views/index.php';
