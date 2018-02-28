@@ -10,7 +10,7 @@
   <!-- Banner -->
   <body class="background_color">
     <header class="banner">
-        <h1 class="title">My Todo List</h1>
+        <h1 class="title">Talk About Stuff</h1>
     </header>
 
     <section class="container-fluid">
