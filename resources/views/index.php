@@ -2,10 +2,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="../public/resources/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/resources/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/resources/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -69,8 +69,8 @@
     </section>
 </section>
 
-<script src="../public/resources/js/bootstrap.bundle.min.js"></script>
-<script src="../public/resources/js/bootstrap.min.js"></script>
+<script src="../public/js/bootstrap.bundle.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
 
 </body>
 </html>

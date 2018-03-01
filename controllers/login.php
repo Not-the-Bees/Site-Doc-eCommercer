@@ -47,14 +47,14 @@ if (isset($_POST['register'])) {
             $newUser = Member::create($login_register, $password_register, $email_register, $username_register);
 
             if ($newUser) {
-                header('location: /TalkAboutStuff/views/valide.php');
+                header('location: /TalkAboutStuff/resources/views/valide.php');
             }
         } else {
-            header('location: /TalkAboutStuff/views/index.php');
+            header('location: /TalkAboutStuff/resources/views/index.php');
         }
     } else {
         echo "Veuillez entrer un login/password/email valide";
     }
 }
 
-require '../views/index.php';
+require '../resources/views/index.php';
