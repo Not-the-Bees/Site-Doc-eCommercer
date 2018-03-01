@@ -6,18 +6,21 @@
     <link rel="stylesheet" type="text/css" href="../public/resources/css/bootstrap-grid.min.css">
     <link rel="stylesheet" type="text/css" href="../public/resources/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="../public/resources/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>TAS : Register / Login</title>
 </head>
 
 <!-- Banner -->
-<body class="background_color">
+<body class=" background_color">
 <header class="banner">
     <h1 class="title">Talk About Stuff</h1>
 </header>
 
 <section class="container-fluid">
     <section class="row">
-
+        
         <!-- Login Form -->
         <div class="col-sm-12 col-md-6 col-lg-6">
             <h2 class="title">Authentification</h2>
@@ -33,6 +36,8 @@
             <p class="error"><?php if (isset($error)) { echo $error; } ?></p>
         </div>
         <!-- End Login Form -->
+
+
 
         <!-- Register Form -->
         <div class="col-sm-12 col-md-6 col-lg-6">

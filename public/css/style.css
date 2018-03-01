@@ -26,6 +26,7 @@ label {
 
 .title {
 	font-weight: bold;
+    color: #ffffff;
 } 
 
 .font_color {
@@ -38,6 +39,11 @@ label {
 
 .font_color a:hover {
 	color: #ff6f3c;
+}
+
+.error {
+    color: #ff0000;
+    text-decoration: underline #ff0000;
 }
 
 /* Banner */
