@@ -24,22 +24,25 @@
         <div class="col-md-6 mb-4">
             <div class="card indigo form-white">
                 <div class="card-body">
+                    <form action="../controllers/login.php" method="post">
                     <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i> Sign in:</h3>
                     <div class="md-form">
                         <i class="fa fa-user prefix white-text"></i>
-                        <input type="text" class="form-control">
+                        <input type="text" name="login" class="form-control">
                         <label>Your Login</label>
                     </div>
                     <div class="md-form">
                         <i class="fa fa-lock prefix white-text"></i>
-                        <input type="password" class="form-control">
+                        <input type="password" name="password" class="form-control">
                         <label>Your Password</label>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-outline-white waves-effect waves-light">Connection</button>
+                        <button class="btn btn-outline-white waves-effect waves-light" name="connect" type="submit">Connection</button>
                     </div>
+                    </form>
                 </div>
             </div>
+            <p class="error"><?php if (isset($error)) { echo $error; } ?></p>
         </div>
         <!-- End Login Form -->
 
@@ -48,35 +51,32 @@
         <div class="col-md-6 mb-4">
             <div class="card indigo form-white">
                 <div class="card-body">
+                    <form action="../controllers/login.php" method="post">
                     <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i> Sign up:</h3>
                     <div class="md-form">
-                        <i class="fa fa-user-secret prefix white-text"></i>
-                        <input type="text" id="defaultForm-email1" class="form-control">
-                        <label for="defaultForm-email1">Your Username (will remain secret)</label>
-                    </div>
-                    <div class="md-form">
                         <i class="fa fa-user prefix white-text"></i>
-                        <input type="text" id="defaultForm-email1" class="form-control">
-                        <label for="defaultForm-email1">Your Login (used to connect)</label>
+                        <input type="text" name="login" id="defaultForm-log" class="form-control">
+                        <label for="defaultForm-login">Your Login</label>
                     </div>
                     <div class="md-form">
                         <i class="fa fa-envelope prefix white-text"></i>
-                        <input type="text" id="defaultForm-email1" class="form-control">
+                        <input type="text" name="email" id="defaultForm-email1" class="form-control">
                         <label for="defaultForm-email1">Your Mail</label>
                     </div>
                     <div class="md-form">
                         <i class="fa fa-lock prefix white-text"></i>
-                        <input type="password" id="defaultForm-pass1" class="form-control">
+                        <input type="password" name="pwd" id="defaultForm-pass1" class="form-control">
                         <label for="defaultForm-pass1">Your Password</label>
                     </div>
                     <div class="md-form">
                         <i class="fa fa-lock prefix white-text"></i>
-                        <input type="password" id="defaultForm-pass1" class="form-control">
-                        <label for="defaultForm-pass1">Password Confirmation</label>
+                        <input type="password" name="confirm_pwd" id="defaultForm-pass2" class="form-control">
+                        <label for="defaultForm-pass2">Password Confirmation</label>
                     </div>
                     <div class="text-center">
-                        <button class="btn btn-outline-white waves-effect waves-light">Register</button>
+                        <button class="btn btn-outline-white waves-effect waves-light" type="submit" name="register">Register</button>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>

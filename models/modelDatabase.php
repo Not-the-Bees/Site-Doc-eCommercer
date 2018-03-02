@@ -3,7 +3,7 @@
 class Database
 {
     //Initialisation du PDO et récupération de la config
-    function initializePdo()
+    public function initializePdo()
     {
 
         try {
@@ -20,7 +20,7 @@ class Database
     }
 
     //Préparation de la requête SQL
-    function prepareStatement($sql)
+    public function prepareStatement($sql)
     {
 
         $pdo_statement = null;

@@ -3,7 +3,7 @@
 class Member {
 
     //Connexion
-    function connect($login, $password)
+    public function connect($login, $password)
     {
 
         $pdo_statement = Database::prepareStatement('SELECT * FROM user WHERE login=:login AND password=:password');
@@ -16,17 +16,16 @@ class Member {
     }
 
     //Création d'un nouveau membre
-    function create($login, $username, $password, $mail)
+    public function create($login, $password, $mail)
     {
 
-        $pdo_statement = Database::prepareStatement('INSERT INTO user (login, username, password, mail, reputation) VALUES (:login, :username, :password, :mail, 0)');
+        $pdo_statement = Database::prepareStatement('INSERT INTO user (login, password, mail, reputation) VALUES (:login, :password, :mail, 0)');
 
         if (
             $pdo_statement &&
             $pdo_statement->bindParam(':login', $login) &&
             $pdo_statement->bindParam(':password', $password) &&
             $pdo_statement->bindParam(':mail', $mail) &&
-            $pdo_statement->bindParam(':username', $username) &&
             $pdo_statement->execute()
         ) {
             return $pdo_statement;
@@ -34,7 +33,7 @@ class Member {
     }
 
     //Suppression d'un membre
-    function delete($id)
+    public function delete($id)
     {
 
         $pdo_statement = Database::prepareStatement('DELETE FROM user WHERE id=:id');

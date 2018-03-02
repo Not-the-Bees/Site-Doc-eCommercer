@@ -21,14 +21,12 @@ if (isset($_POST['connect'])) {
             $_SESSION['login'] = $user['login'];
             $_SESSION['pwd'] = $user['password'];
 
-            header ('location: browse.php');
+            header ('location: ../resources/views/valide.php');
 
         } else {
             $error = "Membre non reconnu - Veuillez entrer un Login ou un Mot de Passe valide";
         }
 
-    } else {
-        echo 'Veuillez entrer un nom d\'utilisateur et un mot de passe.';
     }
 }
 
@@ -36,15 +34,14 @@ if (isset($_POST['connect'])) {
 // Register
 if (isset($_POST['register'])) {
 
-    if (isset($_POST['login'], $_POST['username'],$_POST['pwd'], $_POST['email'], $_POST['confirm_pwd'])) {
+    if (isset($_POST['login'], $_POST['pwd'], $_POST['email'], $_POST['confirm_pwd'])) {
         $login_register = htmlspecialchars($_POST['login']);
         $password_register = htmlspecialchars($_POST['pwd']);
         $email_register = htmlspecialchars($_POST['email']);
         $password_confirmation = htmlspecialchars($_POST['confirm_pwd']);
-        $username_register = htmlspecialchars($POST['username']);
 
         if ($password_register === $password_confirmation) {
-            $newUser = Member::create($login_register, $password_register, $email_register, $username_register);
+            $newUser = Member::create($login_register, $password_register, $email_register);
 
             if ($newUser) {
                 header('location: /TalkAboutStuff/resources/views/valide.php');
@@ -53,7 +50,7 @@ if (isset($_POST['register'])) {
             header('location: /TalkAboutStuff/resources/views/index.php');
         }
     } else {
-        echo "Veuillez entrer un login/password/email valide";
+        echo "Veuillez entrer deux mots de passe identiques";
     }
 }
 
