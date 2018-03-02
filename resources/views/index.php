@@ -2,18 +2,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Css Links -->
     <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/fontawesome-all.css">
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../public/css/form.css">
     <title>TAS : Register / Login</title>
 </head>
 
 <!-- Banner -->
-<body class=" background_color">
+<body>
 <header class="banner">
     <h1 class="title">Talk About Stuff</h1>
 </header>
@@ -22,55 +21,76 @@
     <section class="row">
         
         <!-- Login Form -->
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <h2 class="title">Authentification</h2>
-            <form action="../controllers/login.php" method="post">
-                <label>Votre Login :</label>
-                <input type="text" name="login">
-                <br />
-                <br />
-                <label>Votre mot de passe :</label>
-                <input type="password" name="password"><br />
-                <input type="submit" name="connect" value="Connexion">
-            </form>
-            <p class="error"><?php if (isset($error)) { echo $error; } ?></p>
+        <div class="col-md-6 mb-4">
+            <div class="card indigo form-white">
+                <div class="card-body">
+                    <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i> Sign in:</h3>
+                    <div class="md-form">
+                        <i class="fa fa-user prefix white-text"></i>
+                        <input type="text" class="form-control">
+                        <label>Your Login</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix white-text"></i>
+                        <input type="password" class="form-control">
+                        <label>Your Password</label>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-outline-white waves-effect waves-light">Connection</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Login Form -->
 
 
-
         <!-- Register Form -->
-        <div class="col-sm-12 col-md-6 col-lg-6">
-            <h2 class="title">Nouvel utilisateur, c'est par ici :</h2>
-            <form action="../controllers/login.php" method="post">
-                <label>Votre nom d'utilisateur :</label>
-                <input type="text" name="username">
-                <br />
-                <br />
-                <label>Votre Login (utilisé pour la connexion au site) :</label>
-                <input type="text" name="login">
-                <br />
-                <br />
-                <label>Votre mot de passe :</label>
-                <input type="password" name="pwd"><br />
-                <br />
-                <br />
-                <label>Confirmation de votre mot de passe :</label>
-                <input type="password" name="confirm_pwd"><br />
-                <br />
-                <br />
-                <label>Votre Adresse mail :</label>
-                <input type="mail" name="email"><br />
-                <input type="submit" name="register" value="Register">
-            </form>
+        <div class="col-md-6 mb-4">
+            <div class="card indigo form-white">
+                <div class="card-body">
+                    <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i> Sign up:</h3>
+                    <div class="md-form">
+                        <i class="fa fa-user-secret prefix white-text"></i>
+                        <input type="text" id="defaultForm-email1" class="form-control">
+                        <label for="defaultForm-email1">Your Username (will remain secret)</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-user prefix white-text"></i>
+                        <input type="text" id="defaultForm-email1" class="form-control">
+                        <label for="defaultForm-email1">Your Login (used to connect)</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-envelope prefix white-text"></i>
+                        <input type="text" id="defaultForm-email1" class="form-control">
+                        <label for="defaultForm-email1">Your Mail</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix white-text"></i>
+                        <input type="password" id="defaultForm-pass1" class="form-control">
+                        <label for="defaultForm-pass1">Your Password</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fa fa-lock prefix white-text"></i>
+                        <input type="password" id="defaultForm-pass1" class="form-control">
+                        <label for="defaultForm-pass1">Password Confirmation</label>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-outline-white waves-effect waves-light">Register</button>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- End Register Form -->
 
     </section>
 </section>
 
+<!-- Script -->
 <script src="../public/js/bootstrap.bundle.min.js"></script>
 <script src="../public/js/bootstrap.min.js"></script>
-
+<script src="../public/js/mdb.min.js"></script>
+<script src="../public/js/popper.min.js"></script>
+<script src="../public/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
 </body>
 </html>
