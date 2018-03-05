@@ -1,8 +1,16 @@
 <?php
 
+/**
+ * Class Database
+ * Permet de se connecter à la base de données et d'y envoyer des requêtes
+ */
 class Database
 {
-    //Initialisation du PDO et récupération de la config
+
+    /**
+     * function initializePdo()
+     * Connexion à la base de données (+récupération de la config)
+     */
     public function initializePdo()
     {
 
@@ -19,7 +27,11 @@ class Database
         return $pdo;
     }
 
-    //Préparation de la requête SQL
+
+    /**
+     * function prepareStatement($sql)
+     * Préparation de la requête SQL
+     */
     public function prepareStatement($sql)
     {
 

@@ -1,8 +1,15 @@
 <?php
 
+/**
+ * Class Member
+ * Permet de gérer l'authentification des membres, l'enregistrement des nouveaux membres et la suppression d'un compte utilisateur
+ */
 class Member {
 
-    //Connexion
+    /**
+     * function connect($login, $password)
+     * Permet la connexion (authentification) des membres déjà enregistrés
+     */
     public function connect($login, $password)
     {
 
@@ -15,7 +22,10 @@ class Member {
         return $result;
     }
 
-    //Création d'un nouveau membre
+    /**
+     * function create($login, $password, $mail)
+     * Permet de créer un nouveau membre
+     */
     public function create($login, $password, $mail)
     {
 
@@ -32,7 +42,9 @@ class Member {
         }
     }
 
-    //Suppression d'un membre
+    /**
+     * Permet la suppression d'un compte utilisateur (membre)
+     */
     public function delete($id)
     {
 

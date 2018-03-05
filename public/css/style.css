@@ -42,8 +42,10 @@ label {
 }
 
 .error {
-    color: #ff0000;
+	font-weight: bold;
+	color: #ff0000;
     text-decoration: underline #ff0000;
+	text-align: center;
 }
 
 /* Banner */
