@@ -32,7 +32,7 @@ if (isset($_POST['connect'])) {
 }
 
 
-// Register
+// Regist
 if (isset($_POST['register'])) {
 
     if (isset($_POST['login'], $_POST['pwd'], $_POST['email'], $_POST['confirm_pwd'])) {
