@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd54e23-0a87-452c-85b6-9d91d4ef9d54" name="Default" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/cedf8236-d526-40be-9529-8cd9f875c94b.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/cedf8236-d526-40be-9529-8cd9f875c94b.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/class_diagram:wecommercer.uml" afterPath="" />
-=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/class_diagram:wecommercer.uml" afterPath="$PROJECT_DIR$/documentation/class_diagram:wecommercer.uml" />
->>>>>>> develop
-=======
->>>>>>> origin/develop
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />

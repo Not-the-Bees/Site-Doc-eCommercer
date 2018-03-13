@@ -1,4 +1,4 @@
-# Site Documentation participative (sur le modèle de Stack Overflow)
+# TALK ABOUT STUFF - Site Documentation participative (sur le modèle de Stack Overflow)
 L'idée de ce projet est de créer un site de **Questions/Réponses/Commentaires communautaire** sur des sujets donnés (ex: un jeu vidéo, un langage informatique, etc) afin que les utilisateurs se répondent et s'aident sur ces sujets.
 L'utilisateur qui pose la question pourra séléctionner la réponse qui répond à son problème et ainsi donner des points de réputation à l'utilisateur ayant posté la réponse.
 Ces points de réputation permettront aux utilisateurs d'obtenir le grade de SuperUtilisateur (ils pourront alors éditer certaines réponses/questions/commentaires). 
@@ -31,4 +31,7 @@ Le diagramme des classes (**ClassDiagram.jpg**) et le UseCaseDiagram (**UseCaseD
 -**Page Documentation V1** (susceptible d'être repensée): https://wireframe.cc/ygnuWm   
 
 ## Slide présentation  
-https://slides.com/notthebees/deck-5/live#/
+http://slides.com/notthebees/deck-5
+
+## Base de données
+Un import de la structure de la base de données est disponible. Son chemin est : **/public/resources/sql/talkaboutstuff.sql**
