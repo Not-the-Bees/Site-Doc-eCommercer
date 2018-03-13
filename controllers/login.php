@@ -2,7 +2,8 @@
 
 require '../models/modelDatabase.php';
 require '../models/modelMember.php';
-
+require '../class/Autoloader.php';
+Autoloader::register();
 
 // Login
 if (isset($_POST['connect'])) {
@@ -47,11 +48,11 @@ if (isset($_POST['register'])) {
                 header('location: /TalkAboutStuff/resources/views/valide.php');
             }
         } else {
-            header('location: /TalkAboutStuff/resources/views/index.php');
+            header('location: /TalkAboutStuff/resources/views/login.php');
         }
     } else {
         echo "Veuillez entrer deux mots de passe identiques";
     }
 }
 
-require '../resources/views/index.php';
+require '../resources/views/login.php';

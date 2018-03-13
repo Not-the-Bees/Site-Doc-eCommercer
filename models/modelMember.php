@@ -4,7 +4,8 @@
  * Class Member
  * Permet de gérer l'authentification des membres, l'enregistrement des nouveaux membres et la suppression d'un compte utilisateur
  */
-class Member {
+class Member
+{
 
     /**
      * function connect($login, $password)

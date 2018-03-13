@@ -61,3 +61,8 @@
 .near-moon-gradient {
     background-image: linear-gradient(to bottom, #5ee7df 0%, #b490ca 100%);
 }
+.btn:hover, .btn-primary:focus, .btn:active, .btn.active {
+    border-color: #3F51B5 !important;
+    color: #3F51B5 !important;
+    background-color: #ffffff !important;
+}
