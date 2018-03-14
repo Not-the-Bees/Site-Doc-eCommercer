@@ -2,8 +2,7 @@
 
 require '../models/modelDatabase.php';
 require '../models/modelMember.php';
-require '../class/Autoloader.php';
-Autoloader::register();
+
 
 // Login
 if (isset($_POST['connect'])) {
@@ -32,7 +31,7 @@ if (isset($_POST['connect'])) {
 }
 
 
-// Regist
+// Register
 if (isset($_POST['register'])) {
 
     if (isset($_POST['login'], $_POST['pwd'], $_POST['email'], $_POST['confirm_pwd'])) {

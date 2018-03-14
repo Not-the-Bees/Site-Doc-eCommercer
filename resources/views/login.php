@@ -14,7 +14,7 @@
 <!-- Banner -->
 <body>
 <header class="banner">
-    <h1 class="title">Talk About Stuff</h1>
+    <h1 class="title">Talk About Stuff - Login</h1>
 </header>
 <!-- End Banner -->
 
@@ -25,7 +25,7 @@
         <div class="col-md-6 mb-4">
             <div class="card indigo form-white">
                 <div class="card-body">
-                    <form action="../controllers/login.php" method="post">
+                    <form action="/controllers/login.php" method="post">
                     <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Authentification :</h3>
                     <div class="md-form">
                         <i class="fa fa-user prefix white-text"></i>
