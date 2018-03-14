@@ -14,32 +14,32 @@
 <!-- Banner -->
 <body>
 <header class="banner">
-    <h1 class="title">Talk About Stuff - Login</h1>
+    <h1 class="title">Talk About Stuff</h1>
 </header>
 <!-- End Banner -->
 
 <section class="container-fluid">
     <section class="row">
-        
+
         <!-- Login Form -->
         <div class="col-md-6 mb-4">
             <div class="card indigo form-white">
                 <div class="card-body">
-                    <form action="/controllers/login.php" method="post">
-                    <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Authentification :</h3>
-                    <div class="md-form">
-                        <i class="fa fa-user prefix white-text"></i>
-                        <input type="text" name="login" class="form-control">
-                        <label>Login</label>
-                    </div>
-                    <div class="md-form">
-                        <i class="fa fa-lock prefix white-text"></i>
-                        <input type="password" name="password" class="form-control">
-                        <label>Password</label>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-outline-white waves-effect waves-light" name="connect" type="submit">OK</button>
-                    </div>
+                    <form action="/Talk-About-Stuff/controllers/login.php" method="post">
+                        <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Authentification :</h3>
+                        <div class="md-form">
+                            <i class="fa fa-user prefix white-text"></i>
+                            <input type="text" name="login" class="form-control">
+                            <label>Login</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix white-text"></i>
+                            <input type="password" name="password" class="form-control">
+                            <label>Password</label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-outline-white waves-effect waves-light" name="connect" type="submit">OK</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -52,31 +52,31 @@
         <div class="col-md-6 mb-4">
             <div class="card indigo form-white">
                 <div class="card-body">
-                    <form action="../controllers/login.php" method="post">
-                    <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Enregistrement :</h3>
-                    <div class="md-form">
-                        <i class="fa fa-user prefix white-text"></i>
-                        <input type="text" name="login" id="defaultForm-log" class="form-control">
-                        <label for="defaultForm-login">Login</label>
-                    </div>
-                    <div class="md-form">
-                        <i class="fa fa-envelope prefix white-text"></i>
-                        <input type="text" name="email" id="defaultForm-email1" class="form-control">
-                        <label for="defaultForm-email1">Mail</label>
-                    </div>
-                    <div class="md-form">
-                        <i class="fa fa-lock prefix white-text"></i>
-                        <input type="password" name="pwd" id="defaultForm-pass1" class="form-control">
-                        <label for="defaultForm-pass1">Password</label>
-                    </div>
-                    <div class="md-form">
-                        <i class="fa fa-lock prefix white-text"></i>
-                        <input type="password" name="confirm_pwd" id="defaultForm-pass2" class="form-control">
-                        <label for="defaultForm-pass2">Password Confirmation</label>
-                    </div>
-                    <div class="text-center">
-                        <button class="btn btn-outline-white waves-effect waves-light" type="submit" name="register">OK</button>
-                    </div>
+                    <form action="/Talk-About-Stuff/controllers/login.php" method="post">
+                        <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Enregistrement :</h3>
+                        <div class="md-form">
+                            <i class="fa fa-user prefix white-text"></i>
+                            <input type="text" name="login" id="defaultForm-log" class="form-control">
+                            <label for="defaultForm-login">Login</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix white-text"></i>
+                            <input type="text" name="email" id="defaultForm-email1" class="form-control">
+                            <label for="defaultForm-email1">Mail</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix white-text"></i>
+                            <input type="password" name="pwd" id="defaultForm-pass1" class="form-control">
+                            <label for="defaultForm-pass1">Password</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix white-text"></i>
+                            <input type="password" name="confirm_pwd" id="defaultForm-pass2" class="form-control">
+                            <label for="defaultForm-pass2">Password Confirmation</label>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-outline-white waves-effect waves-light" type="submit" name="register">OK</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -85,6 +85,17 @@
 
     </section>
 </section>
+
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <button type="button" class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0">Continuer vers le site sans s'inscrire</button>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</section>
+
 
 <!-- Script -->
 <script src="../public/js/bootstrap.bundle.min.js"></script>

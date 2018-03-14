@@ -9,17 +9,15 @@ class Member
 
 
     /**
-     * Permet la connexion (authentification) des membres déjà enregistrés
+     * Connect to site with login and password
      * @param $login
-     * @param $password
      * @return mixed
      */
-    static function connect($login, $password)
+    static function connect($login)
     {
 
-        $pdo_statement = Database::prepareStatement('SELECT * FROM user WHERE login=:login AND password=:password');
-        $pdo_statement->execute(array('login' => $login,
-            'password' => $password));
+        $pdo_statement = Database::prepareStatement('SELECT * FROM user WHERE login=:login');
+        $pdo_statement->execute(array('login' => $login));
 
         $result = $pdo_statement->fetch();
 
@@ -27,7 +25,7 @@ class Member
     }
 
     /**
-     * Permet de créer un nouveau membre
+     * Create new member/user account
      * @param $login
      * @param $password
      * @param $mail
@@ -50,7 +48,7 @@ class Member
     }
 
     /**
-     * Permet la suppression d'un compte utilisateur
+     * Delete member account
      * @param $id
      * @return null|PDO|PDOStatement
      */

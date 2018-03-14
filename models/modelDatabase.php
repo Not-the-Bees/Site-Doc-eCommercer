@@ -33,7 +33,7 @@ class Database
      * @param $sql
      * @return null|PDOStatement
      */
-    static function prepareStatement($sql): ?PDO
+    static function prepareStatement($sql): ?PDOStatement
     {
 
         $pdo_statement = null;
