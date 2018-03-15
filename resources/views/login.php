@@ -26,15 +26,15 @@
             <div class="card indigo form-white">
                 <div class="card-body">
                     <form action="/Talk-About-Stuff/controllers/login.php" method="post">
-                        <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Authentification :</h3>
+                        <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Login :</h3>
                         <div class="md-form">
                             <i class="fa fa-user prefix white-text"></i>
-                            <input type="text" name="login" class="form-control">
-                            <label>Login</label>
+                            <input type="text" name="login" class="form-control" required>
+                            <label>Username</label>
                         </div>
                         <div class="md-form">
                             <i class="fa fa-lock prefix white-text"></i>
-                            <input type="password" name="password" class="form-control">
+                            <input type="password" name="password" class="form-control" required>
                             <label>Password</label>
                         </div>
                         <div class="text-center">
@@ -53,25 +53,25 @@
             <div class="card indigo form-white">
                 <div class="card-body">
                     <form action="/Talk-About-Stuff/controllers/login.php" method="post">
-                        <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Enregistrement :</h3>
+                        <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Register :</h3>
                         <div class="md-form">
                             <i class="fa fa-user prefix white-text"></i>
-                            <input type="text" name="login" id="defaultForm-log" class="form-control">
-                            <label for="defaultForm-login">Login</label>
+                            <input type="text" name="login" id="defaultForm-log" class="form-control" required>
+                            <label for="defaultForm-login">Username</label>
                         </div>
                         <div class="md-form">
                             <i class="fa fa-envelope prefix white-text"></i>
-                            <input type="text" name="email" id="defaultForm-email1" class="form-control">
+                            <input type="text" name="email" id="defaultForm-email1" class="form-control" required>
                             <label for="defaultForm-email1">Mail</label>
                         </div>
                         <div class="md-form">
                             <i class="fa fa-lock prefix white-text"></i>
-                            <input type="password" name="pwd" id="defaultForm-pass1" class="form-control">
+                            <input type="password" name="pwd" id="defaultForm-pass1" class="form-control" required>
                             <label for="defaultForm-pass1">Password</label>
                         </div>
                         <div class="md-form">
                             <i class="fa fa-lock prefix white-text"></i>
-                            <input type="password" name="confirm_pwd" id="defaultForm-pass2" class="form-control">
+                            <input type="password" name="confirm_pwd" id="defaultForm-pass2" class="form-control" required>
                             <label for="defaultForm-pass2">Password Confirmation</label>
                         </div>
                         <div class="text-center">

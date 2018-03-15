@@ -12,7 +12,7 @@ if (isset($_POST['connect'])) {
     if (isset($_POST['login'], $_POST['password']))
     {
         $login_entered = htmlspecialchars($_POST['login']);
-        $password_entered = $_POST['password'];
+        $password_entered = htmlspecialchars($_POST['password']);
         $user = Member::connect($login_entered);
 
 
@@ -25,7 +25,7 @@ if (isset($_POST['connect'])) {
             $_SESSION['login'] = $user['login'];
             $_SESSION['pwd'] = $user['password'];
 
-            header ('location: ../resources/views/valide.php');
+            header ('location: ../resources/views/valide.php?username=' . $user['login']);
 
         } else {
 
@@ -57,7 +57,7 @@ if (isset($_POST['register']))
 
             if ($newUser)
             {
-                header('location: /Talk-About-Stuff/resources/views/valide.php');
+                header('location: /Talk-About-Stuff/resources/views/login.php');
             }
         } else {
             header('location: /Talk-About-Stuff/resources/views/login.php');

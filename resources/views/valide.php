@@ -13,15 +13,24 @@
 
 <body>
 
-<h1>BRAVO ! ! ! ! ! ! ! ! ! ! ! !</h1>
+<h1><?= "Congrats " . $_GET['username'] . ", you are now connected!"; ?></h1>
 
 <section class="container">
     <div class="row">
         <div class="col-md-4 offset-md-4">
-            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/login.php" role="button">Retour à la page d'accueil</a>
+            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/login.php" role="button">Go Back Home</a>
         </div>
         <div class="col-md-4"></div>
     </div>
+</section>
+<section class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/addQuestion.php" role="button">Ask new Question</a>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</section>
 
     <script src="/Talk-About-Stuff/public/js/bootstrap.bundle.min.js"></script>
     <script src="/Talk-About-Stuff/public/js/bootstrap.min.js"></script>
