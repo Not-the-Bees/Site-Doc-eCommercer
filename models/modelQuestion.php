@@ -46,9 +46,28 @@ class Question
         return $question;
     }
 
+
+    /**
+     * Browse all exisisting questions
+     * @return mixed|null
+     */
+    static function browse()
+    {
+        $questions = null;
+        $pdo_statement = Database::prepareStatement('SELECT * FROM question');
+
+        if (
+            $pdo_statement &&
+            $pdo_statement->execute()
+        ) {
+            $questions = $pdo_statement->fetch(PDO::FETCH_ASSOC);
+        }
+        return $questions;
+    }
+
     //Modification d'une question si SuperUtilisateur ou Admin
     static function edit()
     {
-
+        //@todo faire la fonction
     }
 }
