@@ -57,10 +57,10 @@ if (isset($_POST['register']))
 
             if ($newUser)
             {
-                header('location: /Talk-About-Stuff/resources/views/login.php');
+                header('location: /Talk-About-Stuff/controllers/login.php');
             }
         } else {
-            header('location: /Talk-About-Stuff/resources/views/login.php');
+            header('location: /Talk-About-Stuff/controllers/login.php');
         }
 
     } else {

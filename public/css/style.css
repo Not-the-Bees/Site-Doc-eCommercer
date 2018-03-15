@@ -49,6 +49,15 @@ label {
 	text-align: center;
 }
 
+.username {
+	color: darkorange;
+	text-decoration: underline darkorange;
+}
+
+.connectedTitle {
+	text-align: center;
+}
+
 /* Banner */
 .banner {
 	/*display: flex;*/

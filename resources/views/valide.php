@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/fontawesome-all.css">
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/form.css">
-    <title>Talk About Stuff - Login OK</title>
+    <title>Talk About Stuff - Hello <?= $_GET['username']; ?></title>
 </head>
 
 <body>
 
-<h1><?= "Congrats " . $_GET['username'] . ", you are now connected!"; ?></h1>
+<h1 class="connectedTitle"><?= "Hello and congrats " . "<span class='username'>" . ucfirst($_GET['username']) . "</span>" . ", you are now connected!"; ?></h1>
 
 <section class="container">
     <div class="row">
