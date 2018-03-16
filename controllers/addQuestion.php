@@ -6,18 +6,21 @@ require '../models/modelMember.php';
 require '../models/modelQuestion.php';
 
 
-$newQuestion = Question::add($_POST['title'], $_POST['content'], $_SESSION['id']);
+if (isset($_POST['postQuestion']))
+{
+
+    $questionTitle = htmlspecialchars($_POST['title']);
+    $questionContent = htmlspecialchars($_POST['content']);
+    $userId = $_SESSION['id'];
+    $newQuestion = Question::add($questionTitle, $questionContent, $userId);
 
 
-if ($newQuestion) {
-
-    $questionTitle = $_POST['title'];
-    $questionDescription = $_POST['content'];
-    $questionUserId = $_SESSION['id'];
+    if ($newQuestion) {
 
 
-    header('Location: ../resources/views/browseQuestion.php');
-    exit;
+        header('Location: ../resources/views/browseQuestion.php');
+        exit;
+    }
 }
 
 require '../resources/views/addQuestion.php';

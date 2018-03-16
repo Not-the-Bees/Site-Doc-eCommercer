@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Css Links -->
-    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/mdb.min.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/public/css/form.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/form.css">
     <title>TalkAboutStuff - Add New Question</title>
 </head>
 
@@ -22,15 +22,15 @@
             <div class="card indigo form-white">
                 <div class="card-body">
                     <form action="/Talk-About-Stuff/controllers/addQuestion.php" method="post">
-                        <h2 class="text-center white-text py-3"><i class="fas fa-question"></i>Your Question :</h2>
+                        <h2 class="text-center white-text py-3"><i class="fa fa-question"></i> Your Question :</h2>
                         <div class="md-form">
-                            <i class="fas fa-question-circle prefix white-text"></i>
+                            <i class="fa fa-question-circle prefix white-text"></i>
                             <input type="text" name="question" class="form-control" required>
                             <label>Question's Title</label>
                         </div>
                         <div class="md-form">
-                            <i class="fas fa-keyboard prefix white-text"></i>
-                            <textarea type="text" name="content" class="form-control" placeholder="Explain more here ..." required>
+                            <i class="fa fa-keyboard prefix white-text"></i>
+                            <textarea cols="100" rows="15" type="text" name="content" class="form-control" required></textarea>
                             <label>Question's content</label>
                         </div>
                         <div class="text-center">
@@ -47,11 +47,11 @@
 
 
 <!-- Script -->
-<script src="/public/js/bootstrap.bundle.min.js"></script>
-<script src="/public/js/bootstrap.min.js"></script>
-<script src="/public/js/mdb.min.js"></script>
-<script src="/public/js/popper.min.js"></script>
-<script src="/public/js/jquery-3.2.1.min.js"></script>
+<script src="../public/js/bootstrap.bundle.min.js"></script>
+<script src="../public/js/bootstrap.min.js"></script>
+<script src="../public/js/mdb.min.js"></script>
+<script src="../public/js/popper.min.js"></script>
+<script src="../public/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
 
 </body>
