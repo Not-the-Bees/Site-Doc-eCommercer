@@ -21,17 +21,17 @@
         <div class="col-md-6 mb-4">
             <div class="card indigo form-white">
                 <div class="card-body">
-                    <form action="/Talk-About-Stuff/controllers/addQuestion.php" method="post">
+                    <form action="../controllers/addQuestion.php" method="post">
                         <h2 class="text-center white-text py-3"><i class="fa fa-question"></i> Your Question :</h2>
                         <div class="md-form">
                             <i class="fa fa-question-circle prefix white-text"></i>
-                            <input type="text" name="question" class="form-control" required>
+                            <input type="text" name="questionTitle" class="form-control" required>
                             <label>Question's Title</label>
                         </div>
                         <div class="md-form">
                             <i class="fa fa-keyboard prefix white-text"></i>
-                            <textarea cols="100" rows="15" type="text" name="content" class="form-control" required></textarea>
-                            <label>Question's content</label>
+                            <textarea class="contentTextarea" rows="5" type="text" name="questionContent" class="form-control" required></textarea>
+                            <label>Your content here...</label>
                         </div>
                         <div class="text-center">
                             <button class="btn btn-outline-white waves-effect waves-light" name="postQuestion" type="submit">Ask !</button>

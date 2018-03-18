@@ -19,7 +19,7 @@ class Question
             $pdo_statement &&
             $pdo_statement->bindParam(':title', $title) &&
             $pdo_statement->bindParam(':content', $content) &&
-            $pdo_statement->bindParam(':user_id', $user_id) &&
+            $pdo_statement->bindParam(':user_id', $user_id, PDO::PARAM_INT) &&
             $pdo_statement->execute()
         ) {
             return $pdo_statement;

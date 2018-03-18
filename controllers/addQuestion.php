@@ -9,8 +9,8 @@ require_once '../inc/bootstrap.php';
 if (isset($_POST['postQuestion']))
 {
 
-    $questionTitle = htmlspecialchars($_POST['title']);
-    $questionContent = htmlspecialchars($_POST['content']);
+    $questionTitle = htmlspecialchars($_POST['questionTitle']);
+    $questionContent = htmlspecialchars($_POST['questionContent']);
     $userId = $_SESSION['id'];
     $newQuestion = Question::add($questionTitle, $questionContent, $userId);
 
@@ -18,7 +18,7 @@ if (isset($_POST['postQuestion']))
     if ($newQuestion) {
 
 
-        header('Location: ../resources/views/browseQuestion.php');
+        header('Location: ../controllers/browseQuestion.php');
         exit;
     }
 }

@@ -80,8 +80,10 @@
                     </form>
                 </div>
             </div>
+            <p class="success"><?php if (isset($success)) { echo $success; } ?></p>
+            <p class="error"><?php if (isset($errorPwd)) { echo $errorPwd; } ?></p>
         </div>
-        <!-- End Register Form -->
+        <!--End Register Form -->
 
     </section>
 </section>

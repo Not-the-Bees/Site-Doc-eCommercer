@@ -1,7 +1,5 @@
 <?php
 
-/*require '../models/modelDatabase.php';
-require '../models/modelMember.php';*/
 require_once '../inc/bootstrap.php';
 
 /**
@@ -58,15 +56,16 @@ if (isset($_POST['register']))
 
             if ($newUser)
             {
-                header('location: ../controllers/login.php');
+                $success = "Registration Complete - Welcome to Talk About Stuff";
+
             }
         } else {
-            header('location: ../controllers/login.php');
+            $errorPwd = "Veuillez entrer deux mots de passe identiques";
         }
 
-    } else {
-        echo "Veuillez entrer deux mots de passe identiques";
     }
+
+
 
 }
 

@@ -49,6 +49,13 @@ label {
 	text-align: center;
 }
 
+.success {
+	font-weight: bold;
+	color: darkorange;
+	text-decoration: underline darkorange;
+	text-align: center;
+}
+
 .username {
 	color: darkorange;
 	text-decoration: underline darkorange;
@@ -72,4 +79,9 @@ label {
 /* Bouton */
 .boutonHome {
 	width: 100%;
+}
+
+/* Textarea */
+.contentTextarea {
+	height:200px;
 }
