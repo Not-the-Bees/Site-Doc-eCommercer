@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-require '../models/modelDatabase.php';
+/*require '../models/modelDatabase.php';
 require '../models/modelMember.php';
-require '../models/modelQuestion.php';
-
+require '../models/modelQuestion.php';*/
+require_once '../inc/bootstrap.php';
 
 if (isset($_POST['postQuestion']))
 {

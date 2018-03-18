@@ -90,7 +90,7 @@
 <section class="container">
     <div class="row">
         <div class="col-md-4 offset-md-4">
-            <button type="button" class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0">Continuer vers le site sans s'inscrire</button>
+            <a href="" class="btn btn-primaty btn-lg btn-deep-orange boutonHome m-0">Continue without login</a>
         </div>
         <div class="col-md-4"></div>
     </div>

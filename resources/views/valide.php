@@ -14,12 +14,14 @@
 
 <body>
 
-<h1 class="connectedTitle"><?= "Hello and congrats " . "<span class='username'>" . ucfirst($_GET['username']) . "</span>" . ", you are now connected!"; ?></h1>
+<div>
+    <h1 class="connectedTitle"><?= "Hello and congrats " . "<span class='username'>" . ucfirst($_GET['username']) . "</span>" . ", you are now connected!"; ?></h1>
+</div>
 
 <section class="container">
     <div class="row">
         <div class="col-md-4 offset-md-4">
-            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/login.php" role="button">Go Back Home</a>
+            <a class="btn btn-primary btn-lg btn-light-blue boutonHome m-0" href="/Talk-About-Stuff/controllers/login.php" role="button">Go Back Home</a>
         </div>
         <div class="col-md-4"></div>
     </div>
@@ -32,13 +34,21 @@
         <div class="col-md-4"></div>
     </div>
 </section>
+<section class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <a class="btn btn-primary btn-lg btn-red boutonHome m-0" href="/Talk-About-Stuff/controllers/logout.php" role="button">Disconnect User</a>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</section>
 
-    <script src="/Talk-About-Stuff/public/js/bootstrap.bundle.min.js"></script>
-    <script src="/Talk-About-Stuff/public/js/bootstrap.min.js"></script>
-    <script src="/Talk-About-Stuff/public/js/mdb.min.js"></script>
-    <script src="/Talk-About-Stuff/public/js/popper.min.js"></script>
-    <script src="/Talk-About-Stuff/public/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+<script src="/Talk-About-Stuff/public/js/bootstrap.bundle.min.js"></script>
+<script src="/Talk-About-Stuff/public/js/bootstrap.min.js"></script>
+<script src="/Talk-About-Stuff/public/js/mdb.min.js"></script>
+<script src="/Talk-About-Stuff/public/js/popper.min.js"></script>
+<script src="/Talk-About-Stuff/public/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
 
 
 </body>

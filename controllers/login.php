@@ -1,7 +1,8 @@
 <?php
 
-require '../models/modelDatabase.php';
-require '../models/modelMember.php';
+/*require '../models/modelDatabase.php';
+require '../models/modelMember.php';*/
+require_once '../inc/bootstrap.php';
 
 /**
  * Login
@@ -57,10 +58,10 @@ if (isset($_POST['register']))
 
             if ($newUser)
             {
-                header('location: /Talk-About-Stuff/controllers/login.php');
+                header('location: ../controllers/login.php');
             }
         } else {
-            header('location: /Talk-About-Stuff/controllers/login.php');
+            header('location: ../controllers/login.php');
         }
 
     } else {
