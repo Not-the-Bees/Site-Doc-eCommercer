@@ -18,7 +18,7 @@
 </header>
 <!-- End Banner -->
 <div>
-    <h2 style="text-align: center;"">Please Login or Register to access the website!</h2>
+    <h2 style="text-align: center;">Please Login or Register to access the website!</h2>
 </div>
 <section class="container-fluid">
     <section class="row">

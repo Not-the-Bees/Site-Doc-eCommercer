@@ -63,7 +63,7 @@ class Question
             $pdo_statement &&
             $pdo_statement->execute()
         ) {
-            $questions = $pdo_statement->fetch(PDO::FETCH_ASSOC);
+            $questions = $pdo_statement->fetchAll(PDO::FETCH_ASSOC);
         }
         return $questions;
     }

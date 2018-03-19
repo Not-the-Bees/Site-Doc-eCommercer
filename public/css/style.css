@@ -21,26 +21,11 @@ label {
 	 color: #ffffff;
 }
 
-.background_color {
-	background-color: #155263;
-}
 
 .title {
 	font-weight: bold;
     color: white;
 } 
-
-.font_color {
-	color: black;
-}
-
-.font_color a {
-	color: #ff9a3c;
-}
-
-.font_color a:hover {
-	color: #ff6f3c;
-}
 
 .error {
 	font-weight: bold;
@@ -63,6 +48,15 @@ label {
 
 .connectedTitle {
 	text-align: center;
+}
+
+.displayQuestion {
+	text-align: center;
+	font-size: 25px;
+}
+
+a:hover {
+    color: #ff6f3c;
 }
 
 

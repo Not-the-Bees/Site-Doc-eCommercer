@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/mdb.min.css">
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/style.css">
     <title>TalkAboutStuff - Browse Questions</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
 <!-- Banner -->
 <section>
     <header class="banner">
-        <h1>Browse the questions</h1>
+        <h1>Browse questions</h1>
     </header>
 </section>
 <!-- End Banner -->
@@ -25,19 +25,22 @@
 
 <section class="container">
     <section class="row">
+
         <ul>
             <?php
-                foreach ($browseQuestions as $browseOne) {
+                foreach ($questions as $question) {
             ?>
+            <br>
             <li>
-                <a href="/Talk-About-Stuff/controllers/readQuestion.php?id<?= $browseOne['id']; ?>">
-                    <?= $browseOne['title']; ?>
-                </a>
+                <a class="displayQuestion" href="/Talk-About-Stuff/controllers/readQuestion.php?id=<?= $question['id']; ?>">
+                    <?php echo strtoupper($question['title']); ?>
+                </a> by <?= ucfirst($_SESSION['login']); ?>, <?= getTimeAgo($question['created_at']); ?>.
             </li>
             <?php
                 }
             ?>
         </ul>
+
     </section>
 </section>
 

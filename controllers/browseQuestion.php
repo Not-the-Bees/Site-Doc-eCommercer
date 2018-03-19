@@ -2,10 +2,11 @@
 session_start();
 
 require_once '../inc/bootstrap.php';
+require_once '../resources/functions/timeAgo.php';
 
 if (isset($_SESSION['login']))
 {
-    $browseQuestions = Question::browse();
+    $questions = Question::browse();
 
 }
 
