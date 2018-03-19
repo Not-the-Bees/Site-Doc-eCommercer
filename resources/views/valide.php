@@ -37,7 +37,7 @@
 <section class="container">
     <div class="row">
         <div class="col-md-4 offset-md-4">
-            <a class="btn btn-primary btn-lg btn-red boutonHome m-0" href="/Talk-About-Stuff/controllers/logout.php" role="button">Disconnect User</a>
+            <a class="btn btn-primary btn-lg btn-red boutonHome m-0" href="/Talk-About-Stuff/controllers/logout.php" role="button">Logout</a>
         </div>
         <div class="col-md-4"></div>
     </div>

@@ -15,14 +15,17 @@ class Question
         $pdo_statement = Database::prepareStatement(
             'INSERT INTO question (title, content, user_id) VALUES (:title, :content, :user_id)');
 
-        if (
-            $pdo_statement &&
-            $pdo_statement->bindParam(':title', $title) &&
-            $pdo_statement->bindParam(':content', $content) &&
-            $pdo_statement->bindParam(':user_id', $user_id, PDO::PARAM_INT) &&
-            $pdo_statement->execute()
-        ) {
-            return $pdo_statement;
+
+        if ($pdo_statement) {
+
+            return $pdo_statement->execute(array(
+                ':title'=>$title,
+                ':content'=>$content,
+                ':user_id'=>$user_id
+            ));
+
+        } else {
+            return false;
         }
     }
 

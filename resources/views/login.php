@@ -17,7 +17,9 @@
     <h1 class="title">Talk About Stuff</h1>
 </header>
 <!-- End Banner -->
-
+<div>
+    <h2 style="text-align: center;"">Please Login or Register to access the website!</h2>
+</div>
 <section class="container-fluid">
     <section class="row">
 
@@ -86,16 +88,6 @@
         <!--End Register Form -->
 
     </section>
-</section>
-
-
-<section class="container">
-    <div class="row">
-        <div class="col-md-4 offset-md-4">
-            <a href="" class="btn btn-primaty btn-lg btn-deep-orange boutonHome m-0">Continue without login</a>
-        </div>
-        <div class="col-md-4"></div>
-    </div>
 </section>
 
 
