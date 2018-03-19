@@ -1,7 +1,13 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: kevin
- * Date: 19/03/18
- * Time: 08:30
- */
+session_start();
+
+require_once '../inc/bootstrap.php';
+
+if (isset($_GET['id']))
+{
+    $id = $_GET['id'];
+    $question = Question::read($id);
+
+}
+
+require '../resources/views/readQuestion.php';

@@ -9,24 +9,35 @@
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/fontawesome-all.css">
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/style.css">
     <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/form.css">
-    <title>Talk About Stuff - Hello <?= ucfirst($_GET['username']); ?></title>
+    <title>Talk About Stuff - Hello <?= ucfirst($_SESSION['login']); ?></title>
 </head>
 
 <body>
 
 <div>
-    <h1 class="connectedTitle"><?= "Hello and congrats " . "<span class='username'>" . ucfirst($_GET['username']) . "</span>" . ", you are now connected!"; ?></h1>
+    <h1 class="connectedTitle"><?= "Hello and congrats " . "<span class='username'>" . ucfirst($_SESSION['login']) . "</span>" . ", you are now connected!"; ?></h1>
 </div>
 
-
+<br>
+<br>
 <section class="container">
     <div class="row">
         <div class="col-md-4 offset-md-4">
-            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/addQuestion.php" role="button">Ask new Question</a>
+            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/addQuestion.php" role="button">Ask a question here!</a>
         </div>
         <div class="col-md-4"></div>
     </div>
 </section>
+<br>
+<section class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/browseQuestion.php" role="button">Browse latest questions</a>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</section>
+<br>
 <section class="container">
     <div class="row">
         <div class="col-md-4 offset-md-4">

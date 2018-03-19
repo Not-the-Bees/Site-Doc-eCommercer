@@ -14,12 +14,13 @@
 </head>
 
 <body>
+<br>
 <section class="container-fluid">
     <section class="row">
 
         <!-- Add-New-Question Form -->
         <div class="col-md-4 offset-md-4">
-            <div class="card indigo form-white">
+            <div class="card deep-orange form-white">
                 <div class="card-body">
                     <form action="../controllers/addQuestion.php" method="post">
                         <h2 class="text-center white-text py-3"><i class="fa fa-question"></i> Your Question :</h2>
@@ -42,13 +43,13 @@
         </div>
         <div class="col-md-4"></div>
     </section>
-
-        <div class="row">
-            <div class="col-md-4 offset-md-4">
-                <a class="btn btn-primary btn-lg btn-light-blue boutonHome m-0" href="/Talk-About-Stuff/controllers/login.php" role="button">Go Back Home</a>
-            </div>
-            <div class="col-md-4"></div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/resources/views/valide.php" role="button">Go Back Home</a>
         </div>
+        <div class="col-md-4"></div>
+    </div>
 
 
 </section>

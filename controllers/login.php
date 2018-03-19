@@ -24,7 +24,7 @@ if (isset($_POST['connect'])) {
             $_SESSION['login'] = $user['login'];
             $_SESSION['pwd'] = $user['password'];
 
-            header ('location: ../resources/views/valide.php?username=' . $user['login']);
+            header ('location: ../resources/views/valide.php');
 
         } else {
 

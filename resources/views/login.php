@@ -17,6 +17,7 @@
     <h1 class="title">Talk About Stuff</h1>
 </header>
 <!-- End Banner -->
+
 <div>
     <h2 style="text-align: center;">Please Login or Register to access the website!</h2>
 </div>
