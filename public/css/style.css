@@ -59,6 +59,11 @@ a:hover {
     color: #ff6f3c;
 }
 
+.questionCard {
+    text-align: center;
+    width: 100%;
+}
+
 
 /* Banner */
 .banner {
