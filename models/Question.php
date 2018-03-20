@@ -77,7 +77,7 @@ class Question
     static function edit($title, $content, $user_id)
     {
         $editQuestion = null;
-        $pdo_statement = Database::prepareStatement('UPDATE todos SET title=:title, content=:content WHERE user_id=:user_id');
+        $pdo_statement = Database::prepareStatement('UPDATE question SET title=:title, content=:content WHERE user_id=:user_id');
 
         if (
             $pdo_statement &&
