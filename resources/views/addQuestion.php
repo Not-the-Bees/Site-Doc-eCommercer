@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/fontawesome-all.css">
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
     <link rel="stylesheet" type="text/css" href="../public/css/form.css">
+
     <title>TalkAboutStuff - Add New Question</title>
 </head>
 
@@ -64,6 +65,5 @@
 <script src="../public/js/popper.min.js"></script>
 <script src="../public/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
-
 </body>
 </html>
