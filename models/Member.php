@@ -8,7 +8,7 @@ class Member
 {
 
     /**
-     * Connect to site with login and password
+     * Connect specific user (already register) to the website
      * @param $login
      * @return mixed
      */
@@ -47,7 +47,7 @@ class Member
     }
 
     /**
-     * Delete member account
+     * Delete member account (WIP
      * @param $id
      * @return null|PDO|PDOStatement
      */
@@ -62,7 +62,7 @@ class Member
             $pdo_statement->execute()
         ) {
             return $pdo_statement;
-        }
+        } //@todo Version 2 : Only Admins can do this (WIP)
     }
 
 }

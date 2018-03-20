@@ -16,14 +16,13 @@ class Question
             'INSERT INTO question (title, content, user_id) VALUES (:title, :content, :user_id)');
 
 
-        if ($pdo_statement) {
-
+        if ($pdo_statement)
+        {
             return $pdo_statement->execute(array(
                 ':title'=>$title,
                 ':content'=>$content,
                 ':user_id'=>$user_id
             ));
-
         } else {
             return false;
         }
@@ -51,7 +50,7 @@ class Question
 
 
     /**
-     * Browse all exisisting questions
+     * Browse last questions
      * @return mixed|null
      */
     static function browse()
@@ -68,9 +67,32 @@ class Question
         return $questions;
     }
 
-    //Modification d'une question si SuperUtilisateur ou Admin
-    static function edit()
+    /**
+     * Edit selected question from specific user (version 2 WIP: only SuperUsers can do this)
+     * @param $title
+     * @param $content
+     * @param $user_id
+     * @return mixed|null
+     */
+    static function edit($title, $content, $user_id)
     {
-        //@todo faire la fonction
+        $editQuestion = null;
+        $pdo_statement = Database::prepareStatement('UPDATE todos SET title=:title, content=:content WHERE user_id=:user_id');
+
+        if (
+            $pdo_statement &&
+            $pdo_statement->bindParam(':user_id', $user_id, PDO::PARAM_INT) &&
+            $pdo_statement->bindParam(':title', $title) &&
+            $pdo_statement->bindParam(':content', $content) &&
+            $pdo_statement->execute()
+        ) {
+            $editQuestion = $pdo_statement->fetch(PDO::FETCH_ASSOC);
+            return $editQuestion;
+        }
+    }
+
+    static function delete()
+    {
+        //@todo Create the delete question -> only for Admins & SuperUsers
     }
 }
