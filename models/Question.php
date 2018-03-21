@@ -74,20 +74,21 @@ class Question
      * @param $user_id
      * @return mixed|null
      */
-    static function edit($title, $content, $user_id)
+    static function edit($title, $content, $id)
     {
         $editQuestion = null;
-        $pdo_statement = Database::prepareStatement('UPDATE question SET title=:title, content=:content WHERE user_id=:user_id');
+        $pdo_statement = Database::prepareStatement('UPDATE question SET title=:title, content=:content WHERE id=:id');
 
         if (
             $pdo_statement &&
-            $pdo_statement->bindParam(':user_id', $user_id, PDO::PARAM_INT) &&
+            $pdo_statement->bindParam(':id', $id, PDO::PARAM_INT) &&
             $pdo_statement->bindParam(':title', $title) &&
             $pdo_statement->bindParam(':content', $content) &&
             $pdo_statement->execute()
         ) {
-            $editQuestion = $pdo_statement->fetch(PDO::FETCH_ASSOC);
-            return $editQuestion;
+            return true;
+        } else {
+            return false;
         }
     }
 

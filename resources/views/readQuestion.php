@@ -39,7 +39,7 @@
     <?php if ($_SESSION['id'] === $question['user_id']) { ?>
     <div class="row">
         <div class="col-md-4 offset-md-4">
-            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/editQuestion.php?=<?= $question['id']; ?>" role="button">Edit this question</a>
+            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/editQuestion.php?id=<?= $question['id']; ?>" role="button">Edit this question</a>
         </div>
         <div class="col-md-4"></div>
     </div>
