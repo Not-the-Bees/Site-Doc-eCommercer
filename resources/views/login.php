@@ -13,8 +13,8 @@
 
 <!-- Banner -->
 <body>
-<header class="banner">
-    <h1 class="title">Talk About Stuff</h1>
+<header>
+    <h1>Talk About Stuff</h1>
 </header>
 <!-- End Banner -->
 
