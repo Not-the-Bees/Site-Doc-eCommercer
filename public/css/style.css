@@ -13,7 +13,7 @@ colors :
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400);
 
 
-h1 {
+.gradientTitle {
 	display: table;
 	margin: 0 auto;
 	font-family: "Roboto Slab";
@@ -24,8 +24,6 @@ h1 {
 	-webkit-text-fill-color: transparent;
 	line-height: 200px;
 }
-
-
 
 
 

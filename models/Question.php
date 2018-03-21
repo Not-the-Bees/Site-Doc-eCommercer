@@ -71,7 +71,7 @@ class Question
      * Edit selected question from specific user (version 2 WIP: only SuperUsers can do this)
      * @param $title
      * @param $content
-     * @param $user_id
+     * @param $id
      * @return mixed|null
      */
     static function edit($title, $content, $id)
