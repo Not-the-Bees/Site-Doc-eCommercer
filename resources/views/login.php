@@ -1,20 +1,6 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Css Links -->
-    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/mdb.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/form.css">
-    <title>Talk About Stuff : Register/Login</title>
-</head>
+<?php require_once '../resources/templates/meta.php'; ?>
 
-<!-- Banner -->
 <body>
-
-<?php require '../resources/templates/nav.php'; ?>
 
 <header>
     <h1 class="gradientTitle">Talk About Stuff</h1>

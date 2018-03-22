@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Css Links -->
-    <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/mdb.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/form.css">
-
-    <title>TalkAboutStuff - Add New Question</title>
-</head>
+<?php require_once '../resources/templates/meta.php'; ?>
 
 <body>
+
+<?php require '../resources/templates/nav.php'; ?>
+
 <br>
 <section class="container-fluid">
     <section class="row">

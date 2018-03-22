@@ -1,18 +1,10 @@
 <?php session_start() ?>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Css Links -->
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/mdb.min.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/form.css">
-    <title>Talk About Stuff - Hello <?= ucfirst($_SESSION['login']); ?></title>
-</head>
+
+<?php require_once '../resources/templates/meta.php'; ?>
 
 <body>
+
+<?php require '../templates/nav.php'; ?>
 
 <div>
     <h1 class="connectedTitle"><?= "Hello and congrats " . "<span class='username'>" . ucfirst($_SESSION['login']) . "</span>" . ", you are now connected!"; ?></h1>

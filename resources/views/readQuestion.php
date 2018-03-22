@@ -1,24 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
+<?php require_once '../resources/templates/meta.php'; ?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Css Links -->
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/mdb.min.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/form.css">
-    <title>TalkAboutStuff - <?= ucfirst($question['title']); ?></title>
-</head>
-
-<!-- Banner -->
 <body>
+
+<?php require '../resources/templates/nav.php'; ?>
 <header class="banner">
     <h1 class="title">Talk About Stuff - Browse Questions</h1>
 </header>
-<!-- End Banner -->
 
 <br>
 <section class="container-fluid">
