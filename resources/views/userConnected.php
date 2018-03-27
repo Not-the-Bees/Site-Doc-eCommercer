@@ -1,5 +1,3 @@
-<?php session_start() ?>
-
 <?php $_title = "Talk About Stuff - Hi " . ucfirst($_SESSION['login']) ?>
 
 <?php ob_start() ?>
@@ -8,7 +6,6 @@
     <h1 class="connectedTitle"><?= "Hello and congrats " . "<span class='username'>" . ucfirst($_SESSION['login']) . "</span>" . ", you are now connected!"; ?></h1>
 </div>
 
-<br>
 <br>
 <section class="container">
 

@@ -1,22 +1,9 @@
-/*
-colors :
-#3F51B5 bleu formulaire login
-#155263 bleu sombre
-#ff6f3c orange sombre
-#ff9a3c orange clair
-#ffc93c jaune
-*/
-
-
-/* General */
-
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400);
 
 
 .gradientTitle {
 	display: table;
 	margin: 0 auto;
-	font-family: "Roboto Slab";
 	font-weight: 400;
 	font-size: 5em;
 	background: linear-gradient(330deg, #e06114 0%, #ee9246 25%, #e0dc66 50%, #335fe0 75%, #e05252 100%);
@@ -24,7 +11,6 @@ colors :
 	-webkit-text-fill-color: transparent;
 	line-height: 200px;
 }
-
 
 
 body {
@@ -39,6 +25,15 @@ label {
 	 color: #ffffff;
 }
 
+.navbar .dropdown-menu a:hover {
+    color: darkorange !important;
+}
+
+.navbar a:hover {
+    background: linear-gradient(330deg, #e06114 0%, #ee9246 25%, #e0dc66 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .title {
 	font-weight: bold;
@@ -73,9 +68,12 @@ label {
 	font-size: 25px;
 }
 
-a:hover {
-    color: #ff6f3c;
-}
+/*a:hover {
+    background: linear-gradient(330deg, #e06114 0%, #ee9246 25%, #e0dc66 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}*/
 
 .questionCard {
     text-align: center;
@@ -102,3 +100,4 @@ a:hover {
 .contentTextarea {
 	height:200px;
 }
+

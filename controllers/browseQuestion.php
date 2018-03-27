@@ -9,4 +9,4 @@ if (isset($_SESSION['login']))
     $questions = Question::browse();
 }
 
-require '../resources/views/browseQuestion.php';
+require_once '../resources/views/browseQuestion.php';

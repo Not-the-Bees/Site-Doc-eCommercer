@@ -41,7 +41,7 @@
     <br>
     <div class="row">
         <div class="col-md-4 offset-md-4">
-            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/resources/views/valide.php" role="button">Go Back Home</a>
+            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/resources/views/userConnected.php" role="button">Go Back Home</a>
         </div>
         <div class="col-md-4"></div>
     </div>

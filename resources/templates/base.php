@@ -8,9 +8,9 @@
         <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/mdb.min.css">
         <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/fontawesome-all.css">
-        <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/style.css">
         <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/form.css">
         <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/style.css">
         <?= isset($_css) ? $_css : "" ?>
         <title><?= isset($_title) ? $_title : "Talk About Stuff" ?></title>
     </head>

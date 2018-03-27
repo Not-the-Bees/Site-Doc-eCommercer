@@ -24,11 +24,11 @@ if (isset($_POST['connect'])) {
             $_SESSION['login'] = $user['login'];
             $_SESSION['pwd'] = $user['password'];
 
-            header ('location: ../resources/views/valide.php');
+            header ('location: ../controllers/userConnected.php');
 
         } else {
 
-            $error = "Membre non reconnu - Veuillez entrer un Login ou un Mot de Passe valide";
+            $error = "Membre non reconnu - Veuillez entrer un Login ou un Mot de Passe userConnected";
 
         }
 
