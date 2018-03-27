@@ -12,17 +12,17 @@
         <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/form.css">
         <link rel="stylesheet" type="text/css" href="/Talk-About-Stuff/public/css/footer.css">
         <?= isset($_css) ? $_css : "" ?>
-        <title><?= $_title ?></title>
+        <title><?= isset($_title) ? $_title : "Talk About Stuff" ?></title>
     </head>
     <body>
 
         <?= $_content ?>
 
-        <script src="../public/js/jquery-3.2.1.min.js"></script>
-        <script src="../public/js/bootstrap.bundle.min.js"></script>
-        <script src="../public/js/bootstrap.min.js"></script>
-        <script src="../public/js/mdb.min.js"></script>
-        <script src="../public/js/popper.min.js"></script>
+        <script src="/Talk-About-Stuff/public/js/jquery-3.2.1.min.js"></script>
+        <script src="/Talk-About-Stuff/public/js/bootstrap.bundle.min.js"></script>
+        <script src="/Talk-About-Stuff/public/js/bootstrap.min.js"></script>
+        <script src="/Talk-About-Stuff/public/js/mdb.min.js"></script>
+        <script src="/Talk-About-Stuff/public/js/popper.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
     </body>
 </html>

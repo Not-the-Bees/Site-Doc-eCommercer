@@ -14,8 +14,6 @@ section .section-title {
 }
 #footer {
     background: #343a40 !important;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
 #footer h5{

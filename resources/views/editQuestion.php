@@ -1,16 +1,12 @@
-<?php require_once '../resources/templates/meta.php'; ?>
+<?php $_title = "Talk About Stuff - Edit question" ?>
 
-<body>
+<?php ob_start() ?>
 
-<?php require '../resources/templates/nav.php'; ?>
-
-<!-- Banner -->
 <section>
     <header class="banner">
         <h1>Edit your question</h1>
     </header>
 </section>
-<!-- End Banner -->
 
 <br>
 <section class="container-fluid">
@@ -48,20 +44,9 @@
             <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/resources/views/valide.php" role="button">Go Back Home</a>
         </div>
         <div class="col-md-4"></div>
-    </div>ed
-
-
+    </div>
 </section>
 
 
-
-
-<!-- Script -->
-<script src="../public/js/jquery-3.2.1.min.js"></script>
-<script src="../public/js/bootstrap.bundle.min.js"></script>
-<script src="../public/js/bootstrap.min.js"></script>
-<script src="../public/js/mdb.min.js"></script>
-<script src="../public/js/popper.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
-
-</body>
+<?php $_layout = ob_get_clean() ?>
+<?php require_once __DIR__ . '/../templates/layout.php';?>

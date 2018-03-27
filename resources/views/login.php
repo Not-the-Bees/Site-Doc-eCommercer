@@ -1,3 +1,5 @@
+<?php $_title = "Login / Register"; ?>
+
 <?php ob_start(); ?>
 
     <header>

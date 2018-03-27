@@ -1,10 +1,8 @@
 <?php session_start() ?>
 
-<?php require_once '../resources/templates/meta.php'; ?>
+<?php $_title = "Talk About Stuff - Hi " . ucfirst($_SESSION['login']) ?>
 
-<body>
-
-<?php require '../templates/nav.php'; ?>
+<?php ob_start() ?>
 
 <div>
     <h1 class="connectedTitle"><?= "Hello and congrats " . "<span class='username'>" . ucfirst($_SESSION['login']) . "</span>" . ", you are now connected!"; ?></h1>
@@ -13,24 +11,25 @@
 <br>
 <br>
 <section class="container">
+
     <div class="row">
         <div class="col-md-4 offset-md-4">
             <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/addQuestion.php" role="button">Ask a question here!</a>
         </div>
         <div class="col-md-4"></div>
     </div>
-</section>
-<br>
-<section class="container">
+
+    <br>
+
     <div class="row">
         <div class="col-md-4 offset-md-4">
             <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/browseQuestion.php" role="button">Browse latest questions</a>
         </div>
         <div class="col-md-4"></div>
     </div>
-</section>
-<br>
-<section class="container">
+
+    <br>
+
     <div class="row">
         <div class="col-md-4 offset-md-4">
             <a class="btn btn-primary btn-lg btn-red boutonHome m-0" href="/Talk-About-Stuff/controllers/logout.php" role="button">Logout</a>
@@ -39,13 +38,5 @@
     </div>
 </section>
 
-
-<script src="../public/js/jquery-3.2.1.min.js"></script>
-<script src="/Talk-About-Stuff/public/js/bootstrap.bundle.min.js"></script>
-<script src="/Talk-About-Stuff/public/js/bootstrap.min.js"></script>
-<script src="/Talk-About-Stuff/public/js/mdb.min.js"></script>
-<script src="/Talk-About-Stuff/public/js/popper.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
-
-
-</body>
+<?php $_layout = ob_get_clean() ?>
+<?php require_once __DIR__ . '/../templates/layout.php';?>
