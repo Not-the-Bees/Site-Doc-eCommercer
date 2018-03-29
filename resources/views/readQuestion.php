@@ -3,7 +3,7 @@
 <?php ob_start() ?>
 
     <header class="banner">
-        <h1 class="title">Talk About Stuff - Browse Questions</h1>
+        <h1 class="title">Talk About Stuff - Question</h1>
     </header>
 
     <br>
@@ -15,7 +15,7 @@
                     <div class="card-body">
                         <p class="card-text"><?= ucfirst($question['content']); ?></p>
                         <a href="/Talk-About-Stuff/controllers/addAnswer.php" class="btn btn-primary btn-lg btn-deep-orange boutonHome m-10" role="button">Answer</a>
-                        <a href="/Talk-About-Stuff/controllers/addComment.php" class="btn btn-primary btn-lg btn-deep-orange boutonHome m-10" role="button">Leave a comment</a>
+                        <a href="/Talk-About-Stuff/controllers/addCommentToQuestion.php" class="btn btn-primary btn-lg btn-deep-orange boutonHome m-10" role="button">Leave a comment</a>
                     </div>
                 </div>
             </div>
@@ -32,18 +32,10 @@
         <?php } ?>
         <div class="row">
             <div class="col-md-4 offset-md-4">
-                <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/userConnected.php" role="button">Back to Home</a>
+                <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/addCommentToQuestion.php" role="button">Add a comment</a>
             </div>
             <div class="col-md-4"></div>
         </div>
-
-        <div class="row">
-            <div class="col-md-4 offset-md-4">
-                <a class="btn btn-primary btn-lg btn-red boutonHome m-0" href="/Talk-About-Stuff/controllers/logout.php" role="button">Logout</a>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
-
     </section>
 
 <?php $_layout = ob_get_clean() ?>

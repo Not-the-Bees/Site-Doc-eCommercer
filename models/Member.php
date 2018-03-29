@@ -6,6 +6,20 @@
  */
 class Member
 {
+    /**
+     * @param $id
+     * @return mixed
+     */
+    static function find($id)
+    {
+        $pdo_statement = Database::prepareStatement('SELECT * FROM user WHERE id=:id');
+        $pdo_statement->execute(array('id' => $id));
+
+        $result = $pdo_statement->fetch();
+
+        return $result;
+
+    }
 
     /**
      * Connect specific user (already register) to the website

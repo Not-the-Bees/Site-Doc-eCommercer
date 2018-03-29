@@ -28,7 +28,7 @@ if (isset($_POST['connect'])) {
 
         } else {
 
-            $error = "Membre non reconnu - Veuillez entrer un Login ou un Mot de Passe userConnected";
+            $error = "Membre non reconnu - Veuillez entrer un Login ou un Mot de Passe valide";
 
         }
 

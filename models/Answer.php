@@ -2,20 +2,76 @@
 
 class Answer
 {
-    //Ajout d'une réponse
-    function addAnswer($question_id, $content, $user_id) {
-
-        $pdo_statement = prepareStatement(
-            'INSERT INTO answer (question_id, content, user_id) VALUES (:question_id, :content, :user_id)');
+    /**
+     * @param $question_id
+     * @return array|null
+     */
+    static function display($question_id)
+    {
+        $answersToQuestion = null;
+        $pdo_statement = Database::prepareStatement('SELECT * FROM answer WHERE question_id = :question_id ORDER BY created_at DESC');
 
         if (
             $pdo_statement &&
             $pdo_statement->bindParam(':question_id', $question_id) &&
-            $pdo_statement->bindParam(':content', $content) &&
-            $pdo_statement->bindParam(':user_id', $user_id) &&
             $pdo_statement->execute()
         ) {
-            return $pdo_statement;
+            $answersToQuestion = $pdo_statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        return $answersToQuestion;
+    }
+
+    /**
+     * @param $question_id
+     * @param $content
+     * @param $user_id
+     * @return bool
+     */
+    static function addToQuestion($question_id, $content, $user_id)
+    {
+
+        $pdo_statement = Database::prepareStatement(
+            'INSERT INTO answer (question_id, content, user_id) VALUES (:question_id, :content, :user_id)');
+
+        if ($pdo_statement) {
+            return $pdo_statement->execute(array(
+                ':question_id' => $question_id,
+                ':content' => $content,
+                ':user_id' => $user_id
+            ));
+        } else {
+            return false;
         }
     }
+
+    /**
+     * @param $answer_id
+     * @param $content
+     * @param $user_id
+     * @return bool
+     */
+    static function addToAnswer($answer_id, $content, $user_id)
+    {
+
+        $pdo_statement = Database::prepareStatement(
+            'INSERT INTO answer_comment (answer_id, content, user_id) VALUES (:answer_id, :content, :user_id)');
+
+        if ($pdo_statement) {
+            return $pdo_statement->execute(array(
+                ':answer_id' => $answer_id,
+                ':content' => $content,
+                ':user_id' => $user_id
+            ));
+        } else {
+            return false;
+        }
+    }
+
+
+    static function deleteAnswer()
+    {
+        //@todo delete comment -> only for Admins and SuperUsers
+    }
+
+    //@todo Create method restoreDeletedComment
 }

@@ -26,7 +26,7 @@
                                 <label>Explain more here...</label>
                             </div>
                             <div class="text-center">
-                                <button class="btn btn-outline-white waves-effect waves-light" name="postQuestion" type="submit">Ask !</button>
+                                <button class="btn btn-outline-white waves-effect waves-light" name="postQuestion" type="submit">Ask ;)</button>
                             </div>
                         </form>
                     </div>

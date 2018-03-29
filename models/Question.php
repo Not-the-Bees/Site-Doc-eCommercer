@@ -94,6 +94,8 @@ class Question
 
     static function delete()
     {
-        //@todo Create the delete question -> only for Admins & SuperUsers
+        //@todo delete question -> only for Admins & SuperUsers
     }
+
+    //@todo Create method restoreDeletedQuestion
 }

@@ -3,7 +3,6 @@ session_start();
 
 require_once '../inc/bootstrap.php';
 
-
 if (isset($_POST['postQuestion']))
 {
 
