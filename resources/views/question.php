@@ -6,9 +6,9 @@
         <h1 class="title">Talk About Stuff - Question</h1>
     </header>
     <section class="container">
-        <!-- Edit button -->
+        <!-- Edit/delete button -->
         <?php if ($_SESSION['id'] === $question['user_id']) { ?>
-            <p class="text-center"><i class="fa fa-lightbulb">  TIPS :</i> This question is yours, you can edit it or delete it with buttons above</p>
+            <p class="text-center"><i class="fa fa-lightbulb">  TIPS :</i> This question is yours, you can edit or delete it with buttons above</p>
             <div class="row">
                 <div class="col-md-6 ">
                     <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/editQuestion.php?id=<?= $question['id']; ?>" role="button"><i class="fa fa-edit"></i>  Edit this question</a>
@@ -17,13 +17,13 @@
                 </div>
             </div>
         <?php } ?>
-        <!-- End edit button -->
+        <!-- End edit/delete button -->
 
         <!-- Question's title & content -->
-        <section class="row">
+        <section class="row mb-0">
             <div class="col-md-10 offset-md-1">
                 <div class="card questionCard">
-                    <h2 class="card-header"><?= ucfirst($question['title']); ?><span class="postedStyle"> posted by <?= ucfirst(Member::find($question['user_id'])['login']); ?>, <?= getTimeAgo($question['created_at']); ?>.</span></h2>
+                    <h2 class="card-header"><i class="fa fa-question-circle"></i> <?= ucfirst($question['title']); ?><span class="postedStyle">     posted by <?= ucfirst(Member::find($question['user_id'])['login']); ?>, <?= getTimeAgo($question['created_at']); ?>.</span></h2>
                     <div class="card-body">
                         <p class="card-text"><?= ucfirst($question['content']); ?></p>
                     </div>
@@ -33,7 +33,7 @@
         <!-- End question's title & content -->
 
         <!-- Display answers -->
-        <section class="row">
+
             <div class="col-md-10 offset-md-1">
                 <div class="card questionCard">
                     <ul>
@@ -46,7 +46,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
+
         <!-- End Display answers -->
 
         <br>
@@ -54,12 +54,11 @@
         <!-- Add answer form -->
         <div class="row">
             <div class="col-md-10 offset-md-1">
-                <div class="card deep-orange form-white">
+                <div class="card grey darken-3 form-white">
                     <div class="card-body">
                         <form action="../controllers/addAnswerToQuestion.php?question_id=<?= $question['id'] ?>"  method="post">
-                            <h2 class="text-center white-text py-3"><i class="fa fa-question"></i> Your Answer :</h2>
+                            <h2 class="text-center white-text py-3"><i class="fa fa-comment"></i> Answer this question :</h2>
                             <div class="md-form">
-                                <i class="fa fa-keyboard prefix white-text"></i>
                                 <textarea class="form-control contentTextarea" rows="5" type="text" name="answerContent" required></textarea>
                                 <label>Your answer here...</label>
                             </div>

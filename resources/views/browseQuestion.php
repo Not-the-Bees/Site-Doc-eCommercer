@@ -5,7 +5,6 @@
     <header class="banner">
         <h1>Browse questions</h1>
     </header>
-
     <section class="container">
         <section class="row">
             <ul>

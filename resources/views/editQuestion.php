@@ -2,34 +2,29 @@
 
 <?php ob_start() ?>
 
-<section>
+<div>
     <header class="banner">
         <h1>Edit your question</h1>
     </header>
-</section>
-
-<br>
+</div>
 <section class="container-fluid">
-    <section class="row">
-
+    <div class="row">
         <!-- Add-New-Question Form -->
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-6 offset-md-3">
             <div class="card deep-orange form-white">
                 <div class="card-body">
                     <form action="../controllers/editQuestion.php?id= <?= $question['id'] ?>" method="post">
-                        <h2 class="text-center white-text py-3"><i class="fa fa-question"></i> Your Question :</h2>
+                        <h2 class="text-center white-text py-3"><i class="fa fa-question-circle"></i> Edit it :</h2>
                         <div class="md-form">
-                            <i class="fa fa-question-circle prefix white-text"></i>
                             <input type="text" name="title" class="form-control" value="<?= $question['title']; ?>" required>
-                            <label>Modify your question</label>
+                            <label>Edit your question</label>
                         </div>
                         <div class="md-form">
-                            <i class="fa fa-keyboard prefix white-text"></i>
                             <textarea class="form-control contentTextarea" rows="5" type="text" name="content" required><?= $question['content']; ?></textarea>
-                            <label>Modify your content</label>
+                            <label>Edit your content</label>
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-outline-white waves-effect waves-light" name="editQuestion" type="submit">Edit this question</button>
+                            <button class="btn btn-outline-white waves-effect waves-light" name="editQuestion" type="submit"><i class="fa fa-fighter-jet"></i> GO !</button>
                         </div>
                     </form>
                 </div>
@@ -37,16 +32,7 @@
             <p class="error"><?php if (isset($errorEdit)) { echo $errorEdit; } ?></p>
         </div>
         <div class="col-md-4"></div>
-    </section>
-    <br>
-    <div class="row">
-        <div class="col-md-4 offset-md-4">
-            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/resources/views/profile.php" role="button">Go Back Home</a>
-        </div>
-        <div class="col-md-4"></div>
     </div>
-</section>
-
 
 <?php $_layout = ob_get_clean() ?>
 <?php require_once __DIR__ . '/../templates/layout.php';?>
