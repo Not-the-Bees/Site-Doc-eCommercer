@@ -24,7 +24,7 @@ if (isset($_POST['connect'])) {
             $_SESSION['login'] = $user['login'];
             $_SESSION['pwd'] = $user['password'];
 
-            header ('location: ../controllers/userConnected.php');
+            header ('location: ../controllers/profile.php');
 
         } else {
 
