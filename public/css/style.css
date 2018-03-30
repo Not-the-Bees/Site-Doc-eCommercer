@@ -1,14 +1,22 @@
-/*
-colors :
-#3F51B5 bleu formulaire login
-#155263 bleu sombre
-#ff6f3c orange sombre
-#ff9a3c orange clair
-#ffc93c jaune
-*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400);
 
 
-/* General */
+.gradientTitle {
+	display: table;
+	margin: 0 auto;
+	font-weight: 400;
+	font-size: 5em;
+	background: linear-gradient(330deg, #e06114 0%, #ee9246 25%, #e0dc66 50%, #335fe0 75%, #e05252 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	line-height: 200px;
+}
+
+.postedStyle {
+	font-size: 16px;
+	color: grey;
+}
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -21,8 +29,14 @@ label {
 	 color: #ffffff;
 }
 
-.background_color {
-	background-color: #155263;
+.navbar .dropdown-menu a:hover {
+    color: darkorange !important;
+}
+
+.navbar a:hover {
+    background: linear-gradient(330deg, #e06114 0%, #ee9246 25%, #e0dc66 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title {
@@ -30,24 +44,46 @@ label {
     color: white;
 } 
 
-.font_color {
-	color: black;
-}
-
-.font_color a {
-	color: #ff9a3c;
-}
-
-.font_color a:hover {
-	color: #ff6f3c;
-}
-
 .error {
 	font-weight: bold;
 	color: #ff0000;
     text-decoration: underline #ff0000;
 	text-align: center;
 }
+
+.success {
+	font-weight: bold;
+	color: darkorange;
+	text-decoration: underline darkorange;
+	text-align: center;
+}
+
+.username {
+	color: darkorange;
+	text-decoration: underline darkorange;
+}
+
+.connectedTitle {
+	text-align: center;
+}
+
+.displayQuestion {
+	text-align: center;
+	font-size: 25px;
+}
+
+/*a:hover {
+    background: linear-gradient(330deg, #e06114 0%, #ee9246 25%, #e0dc66 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}*/
+
+.questionCard {
+    text-align: center;
+    width: 100%;
+}
+
 
 /* Banner */
 .banner {
@@ -57,5 +93,15 @@ label {
 	background-color: #ff6f3c;
 	color: #155263;
 	text-align: center;
+}
+
+/* Bouton */
+.boutonHome {
+	width: 100%;
+}
+
+/* Textarea */
+.contentTextarea {
+	height:200px;
 }
 

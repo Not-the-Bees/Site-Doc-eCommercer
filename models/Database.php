@@ -8,10 +8,10 @@ class Database
 {
 
     /**
-     * function initializePdo()
-     * Connexion à la base de données (+récupération de la config)
+     * Initialize a new instance of PDO
+     * @return null|PDO
      */
-    public function initializePdo()
+    static function initializePdo(): ?PDO
     {
 
         try {
@@ -29,10 +29,11 @@ class Database
 
 
     /**
-     * function prepareStatement($sql)
-     * Préparation de la requête SQL
+     * Initialize a new pdostatement with a Structured Query Language (SQL) string
+     * @param $sql
+     * @return null|PDOStatement
      */
-    public function prepareStatement($sql)
+    static function prepareStatement($sql): ?PDOStatement
     {
 
         $pdo_statement = null;

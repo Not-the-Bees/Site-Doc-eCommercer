@@ -1,20 +1,22 @@
 <?php
 
-require '../models/modelDatabase.php';
-require '../models/modelMember.php';
-require '../class/Autoloader.php';
-Autoloader::register();
+require_once '../inc/bootstrap.php';
 
-// Login
+/**
+ * Login
+ */
+
 if (isset($_POST['connect'])) {
 
-    if (isset($_POST['login'], $_POST['password'])) {
+    if (isset($_POST['login'], $_POST['password']))
+    {
         $login_entered = htmlspecialchars($_POST['login']);
         $password_entered = htmlspecialchars($_POST['password']);
-        $user = Member::connect($login_entered, $password_entered);
+        $user = Member::connect($login_entered);
 
 
-        if ($user) {
+        if ($user && password_verify($password_entered, $user['password']))
+        {
 
             session_start ();
 
@@ -22,37 +24,49 @@ if (isset($_POST['connect'])) {
             $_SESSION['login'] = $user['login'];
             $_SESSION['pwd'] = $user['password'];
 
-            header ('location: ../resources/views/valide.php');
+            header ('location: ../controllers/profile.php');
 
         } else {
+
             $error = "Membre non reconnu - Veuillez entrer un Login ou un Mot de Passe valide";
+
         }
 
     }
 }
 
 
-// Regist
-if (isset($_POST['register'])) {
+/**
+ * Register
+ */
+if (isset($_POST['register']))
+{
 
-    if (isset($_POST['login'], $_POST['pwd'], $_POST['email'], $_POST['confirm_pwd'])) {
+    if (isset($_POST['login'], $_POST['pwd'], $_POST['email'], $_POST['confirm_pwd']))
+    {
         $login_register = htmlspecialchars($_POST['login']);
-        $password_register = htmlspecialchars($_POST['pwd']);
+        $password_register = $_POST['pwd'];
         $email_register = htmlspecialchars($_POST['email']);
-        $password_confirmation = htmlspecialchars($_POST['confirm_pwd']);
+        $password_confirmation = $_POST['confirm_pwd'];
 
-        if ($password_register === $password_confirmation) {
-            $newUser = Member::create($login_register, $password_register, $email_register);
+        if ($password_register === $password_confirmation)
+        {
+            $encrypted_password = password_hash($password_register, PASSWORD_BCRYPT);
+            $newUser = Member::create($login_register, $encrypted_password, $email_register);
 
-            if ($newUser) {
-                header('location: /TalkAboutStuff/resources/views/valide.php');
+            if ($newUser)
+            {
+                $success = "Registration Complete - Welcome to Talk About Stuff";
+
             }
         } else {
-            header('location: /TalkAboutStuff/resources/views/login.php');
+            $errorPwd = "Veuillez entrer deux mots de passe identiques";
         }
-    } else {
-        echo "Veuillez entrer deux mots de passe identiques";
+
     }
+
+
+
 }
 
 require '../resources/views/login.php';

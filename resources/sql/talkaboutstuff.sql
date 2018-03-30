@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
+-- version 4.7.9
+-- https://www.phpmyadmin.net/
 --
--- Client :  localhost
--- Généré le :  Mer 28 Février 2018 à 11:10
+-- Hôte : localhost
+-- Généré le :  lun. 19 mars 2018 à 10:04
 -- Version du serveur :  5.7.21-0ubuntu0.16.04.1
--- Version de PHP :  7.0.27-1+ubuntu16.04.1+deb.sury.org+1
+-- Version de PHP :  7.2.3-1+ubuntu16.04.1+deb.sury.org+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -68,6 +70,14 @@ CREATE TABLE `question` (
   `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Déchargement des données de la table `question`
+--
+
+INSERT INTO `question` (`id`, `title`, `content`, `created_at`, `updated_at`, `deleted_at`, `user_id`) VALUES
+(9, 'test', 'test\r\n', '2018-03-18 17:35:11', '2018-03-18 17:35:11', '2018-03-18 17:35:11', 9),
+(24, 'efglilsfgkmhufdsgsmiugh', 'jbhvsfmdkjhgùdih', '2018-03-19 09:45:41', '2018-03-19 09:45:41', '2018-03-19 09:45:41', 9);
+
 -- --------------------------------------------------------
 
 --
@@ -105,15 +115,21 @@ CREATE TABLE `role` (
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
   `login` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `reputation` int(11) NOT NULL,
-  `deleted_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `deleted_at` datetime DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `user`
+--
+
+INSERT INTO `user` (`id`, `login`, `password`, `mail`, `reputation`, `deleted_at`, `created_at`, `updated_at`) VALUES
+(9, 'robin', '$2y$10$ejh5oq6/lC9OUXzaiMloF.AX364DPogvFaTUWLzJgBOS/OA7LQ5Pa', 'robin@gmail.com', 0, NULL, '2018-03-14 14:56:56', '2018-03-14 15:56:56');
 
 -- --------------------------------------------------------
 
@@ -128,7 +144,7 @@ CREATE TABLE `user_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Index pour les tables exportées
+-- Index pour les tables déchargées
 --
 
 --
@@ -147,7 +163,8 @@ ALTER TABLE `answer_comment`
 -- Index pour la table `question`
 --
 ALTER TABLE `question`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `question_to_user` (`user_id`);
 
 --
 -- Index pour la table `question_comment`
@@ -174,7 +191,7 @@ ALTER TABLE `user_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT pour les tables déchargées
 --
 
 --
@@ -182,38 +199,45 @@ ALTER TABLE `user_role`
 --
 ALTER TABLE `answer`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT pour la table `answer_comment`
 --
 ALTER TABLE `answer_comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT pour la table `question`
 --
 ALTER TABLE `question`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
 --
 -- AUTO_INCREMENT pour la table `question_comment`
 --
 ALTER TABLE `question_comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT pour la table `role`
 --
 ALTER TABLE `role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
 --
 -- AUTO_INCREMENT pour la table `user_role`
 --
 ALTER TABLE `user_role`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
--- Contraintes pour les tables exportées
+-- Contraintes pour les tables déchargées
 --
 
 --
@@ -234,7 +258,7 @@ ALTER TABLE `answer_comment`
 -- Contraintes pour la table `question`
 --
 ALTER TABLE `question`
-  ADD CONSTRAINT `question_to_user` FOREIGN KEY (`id`) REFERENCES `user` (`id`);
+  ADD CONSTRAINT `question_to_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
 
 --
 -- Contraintes pour la table `question_comment`
@@ -255,6 +279,7 @@ ALTER TABLE `role`
 ALTER TABLE `user_role`
   ADD CONSTRAINT `role_to_user` FOREIGN KEY (`id`) REFERENCES `user` (`id`),
   ADD CONSTRAINT `user_to_role` FOREIGN KEY (`id`) REFERENCES `role` (`id`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
