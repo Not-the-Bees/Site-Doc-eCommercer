@@ -5,38 +5,36 @@
     <header class="banner">
         <h1 class="title">Talk About Stuff - Question</h1>
     </header>
-    <br>
-    <section class="container-fluid">
+    <section class="container">
         <!-- Edit button -->
         <?php if ($_SESSION['id'] === $question['user_id']) { ?>
+            <p class="text-center"><i class="fa fa-lightbulb">  TIPS :</i> This question is yours, you can edit it or delete it with buttons above</p>
             <div class="row">
-                <div class="col-md-4 offset-md-4">
-                    <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/editQuestion.php?id=<?= $question['id']; ?>" role="button">Edit this question</a>
+                <div class="col-md-6 ">
+                    <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/editQuestion.php?id=<?= $question['id']; ?>" role="button"><i class="fa fa-edit"></i>  Edit this question</a>
                 </div>
-                <div class="col-md-4"></div>
+                <div class="col-md-6"><a class="btn btn-primary btn-lg btn-red boutonHome m-0" href="/Talk-About-Stuff/controllers/deleteQuestion.php?id=<?= $question['id']; ?>" role="button"><i class="fa fa-eraser"></i>  Delete this question</a>
+                </div>
             </div>
         <?php } ?>
         <!-- End edit button -->
 
-        <br>
-
         <!-- Question's title & content -->
         <section class="row">
-            <div class="col-md-4 offset-md-4">
+            <div class="col-md-10 offset-md-1">
                 <div class="card questionCard">
-                    <h2 class="card-header"><?= ucfirst($question['title']); ?></h2>
+                    <h2 class="card-header"><?= ucfirst($question['title']); ?><span class="postedStyle"> posted by <?= ucfirst(Member::find($question['user_id'])['login']); ?>, <?= getTimeAgo($question['created_at']); ?>.</span></h2>
                     <div class="card-body">
                         <p class="card-text"><?= ucfirst($question['content']); ?></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 offset-md-4"></div>
         </section>
         <!-- End question's title & content -->
 
         <!-- Display answers -->
         <section class="row">
-            <div class="col-md-4 offset-md-4">
+            <div class="col-md-10 offset-md-1">
                 <div class="card questionCard">
                     <ul>
                         <?php foreach ($answersToQuestion as $answer) { ?>
@@ -55,7 +53,7 @@
 
         <!-- Add answer form -->
         <div class="row">
-            <div class="col-md-4 offset-md-4">
+            <div class="col-md-10 offset-md-1">
                 <div class="card deep-orange form-white">
                     <div class="card-body">
                         <form action="../controllers/addAnswerToQuestion.php?question_id=<?= $question['id'] ?>"  method="post">

@@ -15,7 +15,7 @@
                     <br>
                     <li>
                         <a class="displayQuestion" href="/Talk-About-Stuff/controllers/readQuestion.php?id=<?= $question['id']; ?>">
-                            <?php echo strtoupper($question['title']); ?>
+                            <i class="fa fa-angellist"></i> - <?php echo strtoupper($question['title']); ?>
                         </a> by <?= ucfirst(Member::find($question['user_id'])['login']); ?>, <?= getTimeAgo($question['created_at']); ?>.
                     </li>
                     <?php

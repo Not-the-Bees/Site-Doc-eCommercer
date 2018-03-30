@@ -99,6 +99,5 @@
             </section>
         </footer>
 
-
 <?php $_content = ob_get_clean(); ?>
 <?php require_once __DIR__ . '/base.php'; ?>
