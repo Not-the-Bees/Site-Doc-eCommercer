@@ -36,16 +36,16 @@ class Database
     static function prepareStatement($sql): ?PDOStatement
     {
 
-        $pdo_statement = null;
+        $pdoStatement = null;
         $pdo = self::initializePdo();
 
         if ($pdo) {
             try {
-                $pdo_statement = $pdo->prepare($sql);
+                $pdoStatement = $pdo->prepare($sql);
             } catch (PDOException $e) {
                 echo 'erreur : ' . $e->getMessage();
             }
         }
-        return $pdo_statement;
+        return $pdoStatement;
     }
 }

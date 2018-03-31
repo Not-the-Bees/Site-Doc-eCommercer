@@ -12,13 +12,13 @@ class Question
     static function add($title, $content, $user_id)
     {
 
-        $pdo_statement = Database::prepareStatement(
+        $pdoStatement = Database::prepareStatement(
             'INSERT INTO question (title, content, user_id) VALUES (:title, :content, :user_id)');
 
 
-        if ($pdo_statement)
+        if ($pdoStatement)
         {
-            return $pdo_statement->execute(array(
+            return $pdoStatement->execute(array(
                 ':title'=>$title,
                 ':content'=>$content,
                 ':user_id'=>$user_id
@@ -36,14 +36,14 @@ class Question
     static function read($id)
     {
         $question = null;
-        $pdo_statement = Database::prepareStatement('SELECT * FROM question WHERE id = :id');
+        $pdoStatement = Database::prepareStatement('SELECT * FROM question WHERE id = :id');
 
         if (
-            $pdo_statement &&
-            $pdo_statement->bindParam(':id', $id, PDO::PARAM_INT) &&
-            $pdo_statement->execute()
+            $pdoStatement &&
+            $pdoStatement->bindParam(':id', $id, PDO::PARAM_INT) &&
+            $pdoStatement->execute()
         ) {
-            $question = $pdo_statement->fetch(PDO::FETCH_ASSOC);
+            $question = $pdoStatement->fetch(PDO::FETCH_ASSOC);
         }
         return $question;
     }
@@ -56,19 +56,19 @@ class Question
     static function browse()
     {
         $questions = null;
-        $pdo_statement = Database::prepareStatement('SELECT * FROM question');
+        $pdoStatement = Database::prepareStatement('SELECT * FROM question WHERE deleted_at IS NULL');
 
         if (
-            $pdo_statement &&
-            $pdo_statement->execute()
+            $pdoStatement &&
+            $pdoStatement->execute()
         ) {
-            $questions = $pdo_statement->fetchAll(PDO::FETCH_ASSOC);
+            $questions = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
         }
         return $questions;
     }
 
     /**
-     * Edit selected question from specific user (version 2 WIP: only SuperUsers can do this)
+     * Edit selected question from specific user @todo superUsers can do this
      * @param $title
      * @param $content
      * @param $id
@@ -77,14 +77,14 @@ class Question
     static function edit($title, $content, $id)
     {
         $editQuestion = null;
-        $pdo_statement = Database::prepareStatement('UPDATE question SET title=:title, content=:content WHERE id=:id');
+        $pdoStatement = Database::prepareStatement('UPDATE question SET title=:title, content=:content WHERE id=:id');
 
         if (
-            $pdo_statement &&
-            $pdo_statement->bindParam(':id', $id, PDO::PARAM_INT) &&
-            $pdo_statement->bindParam(':title', $title) &&
-            $pdo_statement->bindParam(':content', $content) &&
-            $pdo_statement->execute()
+            $pdoStatement &&
+            $pdoStatement->bindParam(':id', $id, PDO::PARAM_INT) &&
+            $pdoStatement->bindParam(':title', $title) &&
+            $pdoStatement->bindParam(':content', $content) &&
+            $pdoStatement->execute()
         ) {
             return true;
         } else {
@@ -92,9 +92,23 @@ class Question
         }
     }
 
-    static function delete()
+    /**
+     * Delete selected question. Only from specific user
+     * @param $id
+     * @return null|PDOStatement
+     */
+    static function delete($id)
     {
-        //@todo delete question -> only for Admins & SuperUsers
+        //@todo Version 2 : Admins + superUSers can do this (WIP)
+        $pdoStatement = Database::prepareStatement('UPDATE question SET deleted_at = CURRENT_TIMESTAMP() WHERE id = :id');
+
+        if (
+            !$pdoStatement ||
+            !$pdoStatement->bindParam('id', $id, PDO::PARAM_INT) ||
+            !$pdoStatement->execute()
+        ) {
+            return $pdoStatement;
+        }
     }
 
     //@todo Create method restoreDeletedQuestion

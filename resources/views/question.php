@@ -15,6 +15,7 @@
                 </div>
                 <div class="col-md-6"><a class="btn btn-primary btn-lg btn-red boutonHome m-0" href="/Talk-About-Stuff/controllers/deleteQuestion.php?id=<?= $question['id']; ?>" role="button"><i class="fa fa-eraser"></i>  Delete this question</a>
                 </div>
+                <?php if (isset($errorDelete)) { echo '<p class="error">' . $errorDelete . '</p>'; }?>
             </div>
         <?php } ?>
         <!-- End edit/delete button -->
@@ -23,7 +24,7 @@
         <section class="row mb-0">
             <div class="col-md-10 offset-md-1">
                 <div class="card questionCard">
-                    <h2 class="card-header"><i class="fa fa-question-circle"></i> <?= ucfirst($question['title']); ?><span class="postedStyle">     posted by <?= ucfirst(Member::find($question['user_id'])['login']); ?>, <?= getTimeAgo($question['created_at']); ?>.</span></h2>
+                    <h2 class="card-header"><i class="fa fa-question-circle"></i> <?= ucfirst($question['title']); ?><span class="postedStyle"><br> posted by <?= ucfirst(Member::find($question['user_id'])['login']); ?>, <?= getTimeAgo($question['created_at']); ?>.</span></h2>
                     <div class="card-body">
                         <p class="card-text"><?= ucfirst($question['content']); ?></p>
                     </div>

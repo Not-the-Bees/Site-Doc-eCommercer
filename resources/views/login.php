@@ -3,21 +3,21 @@
 <?php ob_start(); ?>
 
     <header>
-        <h1 class="gradientTitle">Talk About Stuff</h1>
+        <h1 class="banner">Talk About Stuff</h1>
     </header>
 
     <div>
-        <h2 style="text-align: center;">Please Login or Register to access the website!</h2>
+        <p class="text-center">Welcome to Talk About Stuff | Please Login or Register to access the website!</p>
     </div>
     <section class="container-fluid">
-        <section class="row">
+        <div class="row">
 
             <!-- Login Form -->
             <div class="col-md-6 mb-4">
-                <div class="card indigo form-white">
+                <div class="card elegant-color form-white">
                     <div class="card-body">
                         <form action="/Talk-About-Stuff/controllers/login.php" method="post">
-                            <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Login :</h3>
+                            <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i> Login :</h3>
                             <div class="md-form">
                                 <i class="fa fa-user prefix white-text"></i>
                                 <input type="text" name="login" class="form-control" required>
@@ -41,10 +41,10 @@
 
             <!-- Register Form -->
             <div class="col-md-6 mb-4">
-                <div class="card indigo form-white">
+                <div class="card elegant-color form-white">
                     <div class="card-body">
                         <form action="/Talk-About-Stuff/controllers/login.php" method="post">
-                            <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i>Register :</h3>
+                            <h3 class="text-center white-text py-3"><i class="fa fa-user-circle"></i> Register :</h3>
                             <div class="md-form">
                                 <i class="fa fa-user prefix white-text"></i>
                                 <input type="text" name="login" id="defaultForm-log" class="form-control" required>
@@ -76,7 +76,7 @@
             </div>
             <!--End Register Form -->
 
-        </section>
+        </div>
     </section>
 
 <?php $_content = ob_get_clean() ?>

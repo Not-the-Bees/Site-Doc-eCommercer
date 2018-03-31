@@ -12,10 +12,10 @@ class Member
      */
     static function find($id)
     {
-        $pdo_statement = Database::prepareStatement('SELECT * FROM user WHERE id=:id');
-        $pdo_statement->execute(array('id' => $id));
+        $pdoStatement = Database::prepareStatement('SELECT * FROM user WHERE id=:id');
+        $pdoStatement->execute(array('id' => $id));
 
-        $result = $pdo_statement->fetch();
+        $result = $pdoStatement->fetch();
 
         return $result;
 
@@ -29,10 +29,10 @@ class Member
     static function connect($login)
     {
 
-        $pdo_statement = Database::prepareStatement('SELECT * FROM user WHERE login=:login');
-        $pdo_statement->execute(array('login' => $login));
+        $pdoStatement = Database::prepareStatement('SELECT * FROM user WHERE login=:login');
+        $pdoStatement->execute(array('login' => $login));
 
-        $result = $pdo_statement->fetch();
+        $result = $pdoStatement->fetch();
 
         return $result;
     }
@@ -47,16 +47,16 @@ class Member
     static function create($login, $password, $mail)
     {
 
-        $pdo_statement = Database::prepareStatement('INSERT INTO user (login, password, mail, reputation) VALUES (:login, :password, :mail, 0)');
+        $pdoStatement = Database::prepareStatement('INSERT INTO user (login, password, mail, reputation) VALUES (:login, :password, :mail, 0)');
 
         if (
-            $pdo_statement &&
-            $pdo_statement->bindParam(':login', $login) &&
-            $pdo_statement->bindParam(':password', $password) &&
-            $pdo_statement->bindParam(':mail', $mail) &&
-            $pdo_statement->execute()
+            $pdoStatement &&
+            $pdoStatement->bindParam(':login', $login) &&
+            $pdoStatement->bindParam(':password', $password) &&
+            $pdoStatement->bindParam(':mail', $mail) &&
+            $pdoStatement->execute()
         ) {
-            return $pdo_statement;
+            return $pdoStatement;
         }
     }
 
@@ -68,15 +68,16 @@ class Member
     static function delete($id)
     {
 
-        $pdo_statement = Database::prepareStatement('DELETE FROM user WHERE id=:id');
+        //@todo Version 2 : Only Admins can do this (WIP)
+        $pdoStatement = Database::prepareStatement('DELETE FROM user WHERE id=:id');
 
         if (
-            $pdo_statement &&
-            $pdo_statement->bindParam(':id', $id, PDO::PARAM_INT) &&
-            $pdo_statement->execute()
+            $pdoStatement &&
+            $pdoStatement->bindParam(':id', $id, PDO::PARAM_INT) &&
+            $pdoStatement->execute()
         ) {
-            return $pdo_statement;
-        } //@todo Version 2 : Only Admins can do this (WIP)
+            return $pdoStatement;
+        }
     }
 
 }
