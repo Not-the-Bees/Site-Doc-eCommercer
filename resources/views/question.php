@@ -6,6 +6,7 @@
         <h1 class="title">Talk About Stuff - Question</h1>
     </header>
     <section class="container">
+
         <!-- Edit/delete button -->
         <?php if ($_SESSION['id'] === $question['user_id']) { ?>
             <p class="text-center"><i class="fa fa-lightbulb">  TIPS :</i> This question is yours, you can edit or delete it with buttons above</p>
@@ -59,8 +60,8 @@
                     <div class="card-body">
                         <form action="../controllers/addAnswerToQuestion.php?question_id=<?= $question['id'] ?>"  method="post">
                             <h2 class="text-center white-text py-3"><i class="fa fa-comment"></i> Answer this question :</h2>
-                            <div class="md-form">
-                                <textarea class="form-control contentTextarea" rows="5" type="text" name="answerContent" required></textarea>
+                            <div class="form-group md-form">
+                                <textarea class="form-control contentTextarea" id="courrier-examen" rows="5" type="text" name="answerContent" required></textarea>
                                 <label>Your answer here...</label>
                             </div>
                             <div class="text-center">
