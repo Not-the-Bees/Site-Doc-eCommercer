@@ -41,7 +41,7 @@
                         <?php foreach ($answersToQuestion as $answer) { ?>
                             <div class="card-body border border-dark">
                                 <p class="card-text"><?php echo ucfirst($answer['content']); ?></p>
-                                <p>by <?= ucfirst(Member::find($answer['user_id'])['login']); ?>, <?= getTimeAgo($answer['created_at']); ?>.</p>
+                                <p class="postedStyle">by <?= ucfirst(Member::find($answer['user_id'])['login']); ?>, <?= getTimeAgo($answer['created_at']); ?>.</p>
                             </div>
                         <?php } ?>
                     </ul>

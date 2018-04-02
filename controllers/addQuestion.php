@@ -6,8 +6,8 @@ require_once '../inc/bootstrap.php';
 if (isset($_POST['postQuestion']))
 {
 
-    $questionTitle = htmlspecialchars($_POST['title']);
-    $questionContent = htmlspecialchars($_POST['content']);
+    $questionTitle = $_POST['title'];
+    $questionContent = $_POST['content'];
     $userId = $_SESSION['id'];
     $newQuestion = Question::add($questionTitle, $questionContent, $userId);
 
