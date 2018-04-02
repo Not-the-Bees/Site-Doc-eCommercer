@@ -9,14 +9,14 @@ class Answer
     static function display($question_id)
     {
         $answersToQuestion = null;
-        $pdo_statement = Database::prepareStatement('SELECT * FROM answer WHERE question_id = :question_id ORDER BY created_at DESC');
+        $pdoStatement = Database::prepareStatement('SELECT * FROM answer WHERE question_id = :question_id ORDER BY created_at DESC');
 
         if (
-            $pdo_statement &&
-            $pdo_statement->bindParam(':question_id', $question_id) &&
-            $pdo_statement->execute()
+            $pdoStatement &&
+            $pdoStatement->bindParam(':question_id', $question_id) &&
+            $pdoStatement->execute()
         ) {
-            $answersToQuestion = $pdo_statement->fetchAll(PDO::FETCH_ASSOC);
+            $answersToQuestion = $pdoStatement->fetchAll(PDO::FETCH_ASSOC);
         }
         return $answersToQuestion;
     }
@@ -30,11 +30,11 @@ class Answer
     static function addToQuestion($question_id, $content, $user_id)
     {
 
-        $pdo_statement = Database::prepareStatement(
+        $pdoStatement = Database::prepareStatement(
             'INSERT INTO answer (question_id, content, user_id) VALUES (:question_id, :content, :user_id)');
 
-        if ($pdo_statement) {
-            return $pdo_statement->execute(array(
+        if ($pdoStatement) {
+            return $pdoStatement->execute(array(
                 ':question_id' => $question_id,
                 ':content' => $content,
                 ':user_id' => $user_id
@@ -53,11 +53,11 @@ class Answer
     static function addToAnswer($answer_id, $content, $user_id)
     {
 
-        $pdo_statement = Database::prepareStatement(
+        $pdoStatement = Database::prepareStatement(
             'INSERT INTO answer_comment (answer_id, content, user_id) VALUES (:answer_id, :content, :user_id)');
 
-        if ($pdo_statement) {
-            return $pdo_statement->execute(array(
+        if ($pdoStatement) {
+            return $pdoStatement->execute(array(
                 ':answer_id' => $answer_id,
                 ':content' => $content,
                 ':user_id' => $user_id

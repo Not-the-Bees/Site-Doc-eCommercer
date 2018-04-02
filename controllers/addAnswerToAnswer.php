@@ -7,7 +7,7 @@ if (isset($_POST['postAnswer']))
 {
     $questionId = $_GET['question_id'];
     $userId = $_SESSION['id'];
-    $answerContent = $_POST['answerContent'];
+    $answerContent = htmlspecialchars($_POST['answerContent']);
     $newAnswer = Answer::addToQuestion($questionId, $answerContent, $userId);
 
     if ($newAnswer)

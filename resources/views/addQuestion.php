@@ -8,7 +8,7 @@
     <section class="container-fluid">
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <div class="card deep-orange form-white">
+                <div class="card elegant-color form-white">
                     <div class="card-body">
                         <form action="../controllers/addQuestion.php" method="post">
                             <h2 class="text-center white-text py-3"><i class="fa fa-question-circle"></i> Your Question :</h2>
