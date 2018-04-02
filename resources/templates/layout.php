@@ -17,9 +17,9 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-question-circle"></i> QUESTIONS</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/Talk-About-Stuff/controllers/browseQuestion.php">BROWSE QUESTIONS</a>
+                                <a class="dropdown-item" href="/Talk-About-Stuff/controllers/browseQuestion.php"><i class="fa fa-book"></i> BROWSE QUESTIONS</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/Talk-About-Stuff/controllers/addQuestion.php">ADD YOUR QUESTION</a>
+                                <a class="dropdown-item" href="/Talk-About-Stuff/controllers/addQuestion.php"><i class="fa fa-plus-circle"></i> ADD YOUR QUESTION</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -28,7 +28,7 @@
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SEARCH</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i> SEARCH</button>
                     </form>
                 </div>
             </nav>

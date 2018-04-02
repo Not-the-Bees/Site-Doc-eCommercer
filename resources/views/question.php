@@ -3,7 +3,7 @@
 <?php ob_start() ?>
 
     <header class="banner">
-        <h1 class="title">Talk About Stuff - Question</h1>
+        <h1 class="title">Question</h1>
     </header>
     <section class="container">
 
@@ -22,7 +22,7 @@
         <!-- End edit/delete button -->
 
         <!-- Question's title & content -->
-        <section class="row mb-0">
+        <div class="row mt-5">
             <div class="col-md-10 offset-md-1">
                 <div class="card questionCard">
                     <h2 class="card-header"><i class="fa fa-question-circle"></i> <?= ucfirst($question['title']); ?><span class="postedStyle"><br> posted by <?= ucfirst(Member::find($question['user_id'])['login']); ?>, <?= getTimeAgo($question['created_at']); ?>.</span></h2>
@@ -31,24 +31,23 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- End question's title & content -->
-
         <!-- Display answers -->
-
+        <div class="row">
             <div class="col-md-10 offset-md-1">
                 <div class="card questionCard">
                     <ul>
                         <?php foreach ($answersToQuestion as $answer) { ?>
-                            <div class="card-body">
+                            <div class="card-body border border-dark">
                                 <p class="card-text"><?php echo ucfirst($answer['content']); ?></p>
-                                by <?= ucfirst(Member::find($answer['user_id'])['login']); ?>, <?= getTimeAgo($answer['created_at']); ?>.
+                                <p>by <?= ucfirst(Member::find($answer['user_id'])['login']); ?>, <?= getTimeAgo($answer['created_at']); ?>.</p>
                             </div>
                         <?php } ?>
                     </ul>
                 </div>
             </div>
-
+        </div>
         <!-- End Display answers -->
 
         <br>
@@ -56,13 +55,12 @@
         <!-- Add answer form -->
         <div class="row">
             <div class="col-md-10 offset-md-1">
-                <div class="card grey darken-3 form-white">
+                <div class="card grey darken-3 ">
                     <div class="card-body">
                         <form action="../controllers/addAnswerToQuestion.php?question_id=<?= $question['id'] ?>"  method="post">
                             <h2 class="text-center white-text py-3"><i class="fa fa-comment"></i> Answer this question :</h2>
-                            <div class="form-group md-form">
-                                <textarea class="form-control contentTextarea" id="courrier-examen" rows="5" type="text" name="answerContent" required></textarea>
-                                <label>Your answer here...</label>
+                            <div class="form-group">
+                                <textarea class="fr-view" type="text" name="answerContent" required></textarea>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-outline-white waves-effect waves-light" name="postAnswer" type="submit">Answer it ;)</button>

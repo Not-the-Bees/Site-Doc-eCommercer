@@ -11,7 +11,7 @@
     <div class="row">
         <!-- Add-New-Question Form -->
         <div class="col-md-6 offset-md-3">
-            <div class="card deep-orange form-white">
+            <div class="card elegant-color form-white">
                 <div class="card-body">
                     <form action="../controllers/editQuestion.php?id= <?= $question['id'] ?>" method="post">
                         <h2 class="text-center white-text py-3"><i class="fa fa-question-circle"></i> Edit it :</h2>
