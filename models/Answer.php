@@ -44,30 +44,6 @@ class Answer
         }
     }
 
-    /**
-     * @param $answer_id
-     * @param $content
-     * @param $user_id
-     * @return bool
-     */
-    static function addToAnswer($answer_id, $content, $user_id)
-    {
-
-        $pdoStatement = Database::prepareStatement(
-            'INSERT INTO answer_comment (answer_id, content, user_id) VALUES (:answer_id, :content, :user_id)');
-
-        if ($pdoStatement) {
-            return $pdoStatement->execute(array(
-                ':answer_id' => $answer_id,
-                ':content' => $content,
-                ':user_id' => $user_id
-            ));
-        } else {
-            return false;
-        }
-    }
-
-
     static function deleteAnswer()
     {
         //@todo delete comment -> only for Admins and SuperUsers

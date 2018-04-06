@@ -31,7 +31,7 @@ Le diagramme des classes (**ClassDiagram.jpg**) et le UseCaseDiagram (**UseCaseD
 -**Page Documentation V1** (susceptible d'être repensée): https://wireframe.cc/ygnuWm   
 
 ## Slide présentation  
-http://slides.com/notthebees/deck-5
+http://slides.com/notthebees/projet-perso-talk-about-stuff
 
 ## Base de données
 Un import de la structure de la base de données est disponible. Son chemin est : **/public/resources/sql/talkaboutstuff.sql**
