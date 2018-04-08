@@ -9,7 +9,7 @@
 
         <!-- Edit/delete button -->
         <?php if ($_SESSION['id'] === $question['user_id']) { ?>
-            <p class="text-center"><i class="fa fa-lightbulb">  TIPS :</i> This question is yours, you can edit or delete it with buttons above</p>
+            <p class="text-center"><i class="fa fa-lightbulb">  TIPS :</i> This question is yours, you can edit or delete it with buttons below.</p>
             <div class="row">
                 <div class="col-md-6 ">
                     <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/editQuestion.php?id=<?= $question['id']; ?>" role="button"><i class="fa fa-edit"></i>  Edit this question</a>
@@ -43,6 +43,20 @@
                             <div class="card-body border border-dark">
                                 <p class="card-text"><?php echo ucfirst($answer['content']); ?></p>
                                 <p class="postedStyle">by <?= ucfirst(Member::find($answer['user_id'])['login']); ?>, <?= getTimeAgo($answer['created_at']); ?>.</p>
+
+                                <!-- Edit/delete button -->
+                                <?php if ($_SESSION['id'] === $question['user_id']) { ?>
+                                    <p class="text-center"><i class="fa fa-lightbulb">  TIPS :</i> This answer is yours, you can edit or delete it with buttons below.</p>
+                                    <div class="row">
+                                        <div class="col-md-6 ">
+                                            <a class="btn btn-primary btn-lg btn-deep-orange boutonHome m-0" href="/Talk-About-Stuff/controllers/editAnswer.php?id=<?= $answer['id']; ?>" role="button"><i class="fa fa-edit"></i>  Edit this answer</a>
+                                        </div>
+                                        <div class="col-md-6"><a class="btn btn-primary btn-lg btn-red boutonHome m-0" href="/Talk-About-Stuff/controllers/deleteAnswer.php?id=<?= $answer['id']; ?>" role="button"><i class="fa fa-eraser"></i>  Delete this answer</a>
+                                        </div>
+                                        <?php if (isset($errorDelete)) { echo '<p class="error">' . $errorDelete . '</p>'; }?>
+                                    </div>
+                                <?php } ?>
+                                <!-- End edit/delete button -->
                             </div>
                         <?php } ?>
                     </ul>
