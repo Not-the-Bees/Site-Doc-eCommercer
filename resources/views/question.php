@@ -45,7 +45,7 @@
                                 <p class="postedStyle">by <?= ucfirst(Member::find($answer['user_id'])['login']); ?>, <?= getTimeAgo($answer['created_at']); ?>.</p>
 
                                 <!-- Edit/delete button -->
-                                <?php if ($_SESSION['id'] === $question['user_id']) { ?>
+                                <?php if ($_SESSION['id'] === $answer['user_id']) { ?>
                                     <p class="text-center"><i class="fa fa-lightbulb">  TIPS :</i> This answer is yours, you can edit or delete it with buttons below.</p>
                                     <div class="row">
                                         <div class="col-md-6 ">

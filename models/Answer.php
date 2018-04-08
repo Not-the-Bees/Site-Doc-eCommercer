@@ -10,7 +10,7 @@ class Answer
     static function display($question_id)
     {
         $answersToQuestion = null;
-    $pdoStatement = Database::prepareStatement('SELECT * FROM answer WHERE question_id = :question_id AND deleted_at IS NULL ORDER BY created_at DESC');
+        $pdoStatement = Database::prepareStatement('SELECT * FROM answer WHERE question_id = :question_id AND deleted_at IS NULL ORDER BY created_at DESC');
 
         if (
             $pdoStatement &&
@@ -22,6 +22,25 @@ class Answer
         return $answersToQuestion;
     }
 
+    /**
+     * Select one answer
+     * @param $id
+     * @return mixed|null
+     */
+    static function displayOne($id)
+    {
+        $answer = null;
+        $pdoStatement = Database::prepareStatement('SELECT * FROM answer WHERE id = :id');
+
+        if (
+            $pdoStatement &&
+            $pdoStatement->bindParam(':id', $id, PDO::PARAM_INT) &&
+            $pdoStatement->execute()
+        ) {
+            $answer = $pdoStatement->fetch(PDO::FETCH_ASSOC);
+        }
+        return $answer;
+    }
     /**
      * Add a new answer to a specific question
      * @param $question_id
@@ -54,7 +73,6 @@ class Answer
      */
     static function edit($content, $id)
     {
-        $editAnswer = null;
         $pdoStatement = Database::prepareStatement('UPDATE answer SET content=:content WHERE id=:id');
 
         if (

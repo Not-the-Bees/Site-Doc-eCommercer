@@ -76,7 +76,7 @@ class Question
      */
     static function edit($title, $content, $id)
     {
-        $editQuestion = null;
+
         $pdoStatement = Database::prepareStatement('UPDATE question SET title=:title, content=:content WHERE id=:id');
 
         if (
