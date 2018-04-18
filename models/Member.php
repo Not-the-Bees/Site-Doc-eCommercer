@@ -63,7 +63,8 @@ class Member
     /**
      * Delete member account (WIP
      * @param $id
-     * @return null|PDO|PDOStatement
+     *
+     * @return null|PDOStatement
      */
     static function delete($id)
     {

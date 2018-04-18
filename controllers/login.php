@@ -9,12 +9,12 @@ if (isset($_POST['connect'])) {
 
     if (isset($_POST['login'], $_POST['password']))
     {
-        $login_entered = htmlspecialchars($_POST['login']);
-        $password_entered = htmlspecialchars($_POST['password']);
-        $user = Member::connect($login_entered);
+        $loginEntered = htmlspecialchars($_POST['login']);
+        $passwordEntered = htmlspecialchars($_POST['password']);
+        $user = Member::connect($loginEntered);
 
 
-        if ($user && password_verify($password_entered, $user['password']))
+        if ($user && password_verify($passwordEntered, $user['password']))
         {
 
             session_start ();
