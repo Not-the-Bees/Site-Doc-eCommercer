@@ -5,7 +5,6 @@ require_once '../inc/bootstrap.php';
 /**
  * Login
  */
-
 if (isset($_POST['connect'])) {
 
     if (isset($_POST['login'], $_POST['password']))
@@ -44,15 +43,15 @@ if (isset($_POST['register']))
 
     if (isset($_POST['login'], $_POST['pwd'], $_POST['email'], $_POST['confirm_pwd']))
     {
-        $login_register = htmlspecialchars($_POST['login']);
-        $password_register = $_POST['pwd'];
-        $email_register = htmlspecialchars($_POST['email']);
-        $password_confirmation = $_POST['confirm_pwd'];
+        $loginRegister = htmlspecialchars($_POST['login']);
+        $passwordRegister = $_POST['pwd'];
+        $emailRegister = htmlspecialchars($_POST['email']);
+        $passwordConfirmation = $_POST['confirm_pwd'];
 
-        if ($password_register === $password_confirmation)
+        if ($passwordRegister === $passwordConfirmation)
         {
-            $encrypted_password = password_hash($password_register, PASSWORD_BCRYPT);
-            $newUser = Member::create($login_register, $encrypted_password, $email_register);
+            $encryptedPassword = password_hash($passwordRegister, PASSWORD_BCRYPT);
+            $newUser = Member::create($loginRegister, $encryptedPassword, $emailRegister);
 
             if ($newUser)
             {
