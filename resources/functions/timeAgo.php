@@ -1,10 +1,10 @@
 <?php
 
-function getTimeAgo( $ptime ){
+function getTimeAgo( $time ){
 
-    $estimate_time = time() - strtotime($ptime);
+    $estimateTime = time() - strtotime($time);
 
-    if( $estimate_time < 1 )
+    if( $estimateTime < 1 )
     {
         return 'less than 1 second ago';
     }
@@ -19,7 +19,7 @@ function getTimeAgo( $ptime ){
     );
 
     foreach( $condition as $secs => $str ) {
-        $d = $estimate_time / $secs;
+        $d = $estimateTime / $secs;
 
         if( $d >= 1 )
         {
